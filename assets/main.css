@@ -562,6 +562,7 @@ html {
 .motivation__container__copy h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-size: 3em;
 }
 .motivation__container__copy h3 {
   font-size: 1.2em;
