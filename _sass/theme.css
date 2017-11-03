@@ -545,6 +545,9 @@ html {
 }
 
 #motivation.motivation-show {
+  border-left: 20px solid #ef494f;
+  border-right: 20px solid #ef494f;
+  box-shadow: 0px 0px 10px black;
   transform: translateY(0px);
   opacity: 1;
 }
@@ -572,8 +575,11 @@ html {
 }
 
 .motivation__container__media {
-  max-width: 300px;
+  max-width: 380px;
   align-self: center;
+}
+.motivation__container__media img {
+  max-width: 100%;
 }
 
 .services {
