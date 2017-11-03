@@ -1,0 +1,43 @@
+// ==> VARIABLES
+
+// Colors
+$dark-blue-bg: #0b212b;
+$light-blue-bg: #123747;
+$white-bg: #ffffff;
+$light-gray-bg: #f7f7f7;
+$warm-gray-bg: #ece9e5;
+$trust-green-color: #78b54b;
+
+$text-darker: $dark-blue-bg;
+$title-color: $light-blue-bg;
+$light-blue-text: #2E8DB7;
+$text-lighter: #e1e3e6;
+$accent-color: #EF494F;
+$heavenly-color: $light-blue-text;
+
+$light-blue-color: #539AB9;
+$comunicazione-color: #FC8059;
+
+//Fonts
+$text-font: 'Proxima Nova', Montserrat, sans-serif;
+$title-font: 'Helvetica Condensed', 'Roboto Condensed', serif;
+
+//Transitions
+$slow-transition: .5s ease-in-out;
+$medium-transition: .3s ease-in-out;
+$fast-transition: .1s ease-in-out;
+
+$grid-gutter-width-base:     10px !default;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+) !default;
+
+// TIpografia Fluida
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 14px;
+$max_font: 16px;

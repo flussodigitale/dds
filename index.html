@@ -1,12 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Digital Documents Solution</title>
-</head>
-<body>
-    <h1>Digital Documents Solution</h1>
-</body>
-</html>
+---
+layout: default
+title: Digital Documents Solution
+meta: Meta description della home page
+
+target: Home - flussodigitale.it
+
+priority: 1.0
+---
+{% include tab.html %}
+
+<!-- STATIC BANNER -->
+<section id="motivation" class="motivation">
+  <div class="motivation__container container">
+    <div class="row">
+      <div class="col motivation__container__copy">
+        <h1>Scegli di lavorare in modo ancor più efficiente attraverso la <span class="evidenzia" style="display: block;">digital transformation</span></h1>
+        <h3>
+          Le aziende che adottano il digitale hanno risultati eccellenti in tutte le aree legate alla crescita
+        </h3>
+        <a href="#" class="button">inizia ora</a>
+      </div>
+
+      <div class="col motivation__container__media">
+        <img src="assets/img/success.svg" alt="New idea Icon" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include services.html %}
+{% include slide-services.html %}
+
+<!-- NEWS -->
+<section class="news">
+  <div class="container news__container">
+    <h3 class="news__container__title">Ultime Notizie</h3>
+    <div class="row news__container__posts">
+      {% for post in site.categories.news limit:3 %}
+        <div class="col-md-12 col-lg-4 news__container__posts__post">
+          <a href="{{site.baseurl}}{{post.url}}">
+            <h2 class="news__container__posts__post__title">
+              {{ post.title }}
+            </h2>
+            <p class="news__container__posts__post__date">Pubblicato il giorno: {{post.date | date: "%d/%m/%Y"}} </p>
+            <p class="news__container__posts__post__author">da: {{post.author}} </p>
+
+            <div class="news__container__posts__post__media">
+              <img src="{{post.image}}" alt="{{post.altImg}}" />
+            </div>
+          </a>
+          <div class="news__container__posts__post__copy">
+            <p>{{post.meta}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include slide-projects.html %}
+{% include form-home.html %}

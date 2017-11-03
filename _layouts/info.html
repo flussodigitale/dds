@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "it" }}">
+
+  {% include head.html %}
+
+  <body>
+    {% include header-page.html headclass="top top-page info" %}
+
+    <article class="info">
+        <div class="fluid-container info__container">
+            <div class="info__container__wrapper">
+                {{content}}
+            </div>
+            
+            {% if page.url contains 'contatti' %}
+                {% include staff.html %}
+            {% endif %}
+        </div>
+    </article>
+    {% if page.url contains 'contatti' %}
+        {% include map.html %}
+    {% endif %}
+
+    {% include footer.html %}
+  </body>
+
+</html>
+
+
+
+
+<!-- {% if page.url contains 'about' %}
+    <div class="row info__container__wrapper__navigator">
+        <div class="col info__container__wrapper__navigator__button">
+            <a href="{{site.baseurl}}/servizi/">
+                <img src="{{site.baseurl}}/assets/img/icons/icon-about-scopri-offerta.svg" alt="Scopri l'offerta">
+                <span>Scopri</span> la nostra offerta
+            </a>
+        </div>
+        <div class="col info__container__wrapper__navigator__button">
+            <a href="{{site.baseurl}}/contatti.html">
+                <img src="{{site.baseurl}}/assets/img/icons/icon-about-visita-ufficio.svg" alt="Visita l'ufficio">
+                <span>Visita</span> il nostro ufficio
+            </a>
+        </div>
+    </div>
+{% endif %} -->

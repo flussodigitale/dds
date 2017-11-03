@@ -1,0 +1,42 @@
+<!-- HEADER -->
+<section class="{{ include.headclass }}" id="canvas-container">
+  <header id="header" class="top__header clearfix">
+      <div class="container top__header__container">
+            {% include nav.html %}
+      </div>
+
+      <!-- apri/chiudi sidebar -->
+      <div class="single-toggle active">
+        <div class="single-toggle-items">
+          <div class="single-toggle-item"></div>
+          <div class="single-toggle-item"></div>
+          <div class="single-toggle-item"></div>
+        </div>
+        <div class="single-toggle-active"></div>
+      </div>
+      
+    </header>
+
+  {% include loader.html %}
+
+  <div class="container">
+    
+    {% if page.url contains 'news' %}
+      <div class="dynamic-banner" style="background-image: url({{page.image}});"></div>
+      <hgroup>
+        <h1>{{ page.title | escape }}</h1>
+        <h5>{{ page.description }}</h5>
+      </hgroup>
+
+      <p class="news__container__posts__post__date">Pubblicato il giorno: {{page.date | date: "%d/%m/%Y"}} </p>
+      <p class="news__container__posts__post__author">da: {{page.author}} </p>
+
+    {% else %}
+      <img src="{{ page.banner }}" alt="{{page.altImg}}" />
+      <hgroup>
+        <h1>{{ page.title | escape }}</h1>
+        <h5>{{ page.description }}</h5>
+      </hgroup>
+    {% endif %}
+  </div>
+</section>

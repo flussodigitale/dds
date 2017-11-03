@@ -1,0 +1,9 @@
+<ul>
+    {% for servizio in site.pages %}
+        {% if servizio.type == include.type  %}
+            <li class="{% if page.url contains {{servizio.mark}} %}current-page{% endif %}">
+                <a href="{{servizio.url}}">{{ servizio.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

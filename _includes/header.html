@@ -1,0 +1,26 @@
+<!-- HEADER -->
+<section class="{{ include.headclass }}" id="canvas-container">
+  <header id="header" class="top__header clearfix">
+    <div class="container top__header__container">
+          {% include nav.html %}
+    </div>
+
+    <!-- apri/chiudi sidebar -->
+    <div class="single-toggle active">
+      <div class="single-toggle-items">
+        <div class="single-toggle-item"></div>
+        <div class="single-toggle-item"></div>
+        <div class="single-toggle-item"></div>
+      </div>
+      <div class="single-toggle-active"></div>
+    </div>  
+          
+  </header>
+  
+  {% include loader.html %}
+
+  {% if page.url == '/' %}
+    <!-- ANIMATE BANNER -->
+    {% include banner-animate.html %}
+  {% endif %}
+</section> 

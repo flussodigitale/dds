@@ -1,0 +1,82 @@
+// ==> TAB SECTION
+/* Labels */
+.tab {
+    position: relative;
+    background: white;
+}
+
+.tab input[type="radio"] { display: none; }
+
+.tab label img { 
+    width: 70px; 
+    margin: 0 30px; 
+    opacity: 0.7;
+    pointer-events: none;
+    max-height: 50px;
+}
+
+.tab label {
+    cursor: pointer;
+    background-color: #0b212b;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $medium-transition;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #576971;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    &:hover {
+        color: white;
+        img { 
+            opacity: 1;
+        }
+    }
+
+    span { pointer-events: none; }
+}
+
+.tab:last-child {border: none;}
+
+.tab input[type=radio]:checked + label { background-color: #0b212b; color: white; img {opacity: 1} }
+
+/* Content */
+#tab-content-container { 
+    opacity: 0; 
+    transition: 1s ease-out;
+}
+
+.tab__container  { 
+    padding: 35px;
+    margin-bottom: 4em; 
+}
+
+.tab__content img {align-self: center;  padding: 20px 50px; max-width: 300px;}
+.tab__content .copy { align-self: center; padding: 20px 50px; }
+
+.tab__content {
+    display: block;
+    transition: $slow-transition;
+
+    h2 {
+      font-family: $title-font;
+      text-transform: uppercase;
+      color: $light-blue-text;
+      font-size: 3em;
+      text-align: center;
+      letter-spacing: -4px;
+    }
+
+    .tab__content__media { text-align: right; }
+    
+    .tab__content__copy a {
+        display: inline-block;
+    }
+}
+
+
+/* ==> Classi Scroll Magic <== */
+#tab-content-container.fade-in { opacity: 1; }

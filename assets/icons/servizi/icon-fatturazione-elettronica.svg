@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 565 424.4" style="enable-background:new 0 0 565 424.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2E8DB7;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#BCBCBC;}
+	.st3{fill:#E2DFCF;}
+	.st4{fill:#F4F4F4;}
+	.st5{fill:#5B5B5B;}
+</style>
+<title>icon-trasmissione-atti-telematici</title>
+<g>
+	<g>
+		<path class="st0" d="M3,348.6c0,13.7,11.2,25,25,25h508c13.7,0,25-11.3,25-25V91H3V348.6z"/>
+		<path class="st0" d="M561,28.1c0-13.7-11.2-25-25-25H28c-13.7,0-25,11.2-25,25v54.5h558V28.1z"/>
+	</g>
+	<g>
+		<circle class="st1" cx="43.5" cy="46.7" r="13.4"/>
+		<circle class="st1" cx="84.2" cy="46.7" r="13.4"/>
+		<circle class="st1" cx="124.9" cy="47" r="13.4"/>
+	</g>
+</g>
+<g>
+	<polygon class="st2" points="117.5,225.5 446,225.5 282,336.5 	"/>
+	<polygon class="st2" points="117.5,225.5 282.2,114.5 446.5,225.5 	"/>
+	<rect x="147" y="161" class="st3" width="264" height="226.7"/>
+	<g>
+		<path class="st4" d="M117.5,225.5v185.7c0,5.2,4.2,9.3,9.3,9.3h310.3c5.2,0,9.3-4.2,9.3-9.3V225.5L282,336.5L117.5,225.5z"/>
+	</g>
+</g>
+<g>
+	<path class="st5" d="M220,241.8v-19.3h13.7v3.6h-9.6v4.1h9.4v3.6h-9.4v8H220z"/>
+	<path class="st5" d="M248.6,241.8l-1.2-3.3h-8.3l-1.2,3.3h-4.7l7.5-19.3h5.2l7.5,19.3H248.6z M243.3,226.6l-3,8.3h6L243.3,226.6z"
+		/>
+	<path class="st5" d="M257.8,241.8v-15.7h-5.7v-3.6h15.4v3.6h-5.6v15.7H257.8z"/>
+	<path class="st5" d="M274.6,241.8v-15.7H269v-3.6h15.4v3.6h-5.6v15.7H274.6z"/>
+	<path class="st5" d="M287.1,234.1v-11.6h4.2v11.5c0,2.7,1.6,4.6,4.6,4.6s4.5-1.9,4.5-4.6v-11.5h4.2v11.6c0,4.8-2.8,8.1-8.7,8.1
+		C289.9,242.1,287.1,238.8,287.1,234.1z"/>
+	<path class="st5" d="M319.2,241.8l-3.8-6.9h-3v6.9h-4.1v-19.3h9c4,0,6.5,2.6,6.5,6.2c0,3.4-2.1,5.2-4.2,5.7l4.3,7.4H319.2z
+		 M319.7,228.7c0-1.6-1.2-2.6-2.9-2.6h-4.3v5.2h4.3C318.4,231.3,319.7,230.3,319.7,228.7z"/>
+	<path class="st5" d="M340.3,241.8l-1.2-3.3h-8.3l-1.2,3.3h-4.7l7.5-19.3h5.2l7.5,19.3H340.3z M335,226.6l-3,8.3h6L335,226.6z"/>
+</g>
+<path class="st5" d="M347.4,266.2h-126c-1.7,0-3.2-1.4-3.2-3.2l0,0c0-1.7,1.4-3.2,3.2-3.2h126c1.7,0,3.2,1.4,3.2,3.2l0,0
+	C350.6,264.7,349.1,266.2,347.4,266.2z"/>
+<path class="st5" d="M347.4,282.2h-126c-1.7,0-3.2-1.4-3.2-3.2l0,0c0-1.7,1.4-3.2,3.2-3.2h126c1.7,0,3.2,1.4,3.2,3.2l0,0
+	C350.6,280.7,349.1,282.2,347.4,282.2z"/>
+</svg>

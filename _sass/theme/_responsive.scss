@@ -1,0 +1,333 @@
+/* ----------- General ----------- */
+@media (max-device-width : 1024px)  {
+
+    /* SIDEBAR DA FARE SU TUTTE LE PAGINE */ 
+    .nav-responsive { display: block; }
+    .single-toggle  { display: flex; }
+
+    .top__header__nav { display: none!important; }
+
+    .logo-dds-single.responsive {
+        display: block;
+        height: 50px;
+        width: 100%;
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 25px;
+
+        svg {
+            width: 120px;
+            .st3 {
+                fill: #E4EEF9;
+            }
+
+            .st5, .st6, .st7 {
+                opacity: 0.8;
+                fill: #b5b5b5;
+            }
+        }
+    }
+
+    .sidebar__header {
+        display: none; 
+    }
+
+        body.single-layout {
+        position: relative;
+        margin-left: 0px;
+    }
+
+    body #header { 
+        display: flex; 
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .single-toggle {
+        top: 0; 
+        position: relative;
+        background: transparent; 
+    }
+/* FINE SIDEBAR DA FARE SU TUTTE LE PAGINE */ 
+
+    /* Header */
+    svg .st5,   svg .st6,     svg .st7 {
+        fill: #b5b5b5;
+    }
+
+    .top__header .top__header__container {
+        margin-left: 0;
+    }
+}
+
+/* ----------- iPad ----------- */
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .swiper-slide .container {
+        width: 80%;
+    }
+
+    .big-logo {
+        width: 500px;
+    }
+
+    /* TAB */
+    .tab .col-md-12 {
+        background-color: #0b212b; 
+    }
+    .tab label {
+        max-width: 500px;
+        margin: 0 auto;
+        border: none;
+        img { display: none; }
+    }
+
+    /* PAGE */
+    .top.top-page {
+        height: 45vh !important;
+    }
+
+    .top.top-page hgroup h1 {
+        margin-bottom: 25px;
+    }
+
+    .top .container h1 {
+        margin: 0;
+        max-width: none;
+    }
+
+    section.content h2 {
+        margin: 2em;
+    }
+
+    .offerta__container__items {
+        justify-content: center;
+    }
+
+    .offerta .offerta__container__items__item__copy p {
+        font-size: 1.1em;
+    }
+
+    /* SINGLE */
+    body.single-layout {
+        margin-left: 0px;
+    }
+
+    .top-single > .container img {
+        top: 5em;
+        max-width: 365px;
+        left: 0; 
+    }    
+
+    .top-single > .container hgroup { margin: 0; }
+
+    .single-toggle {
+        transform: translateX(0);
+        transition: 500ms cubic-bezier(0.4, 0, 0.04, 0.90);
+    }
+
+    .single-toggle.active {
+        transform: translateX(260px);
+    }
+
+    .top-single > .container {
+        justify-content: center !important;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .single-container .field img {
+        max-width: 100%;
+    }
+    
+    .single-container .field img[src*="creativity"] {
+        margin-left: 0!important;
+    }
+
+    .offerta .offerta__container .offerta__container__items__item {
+        margin: 0;
+        max-width: none;
+    }
+
+
+}
+
+
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    // ===> TOP <=== //
+    .top__header__nav { display: none; }
+    .top .container h1 {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .big-logo {
+        width: 300px;
+    }
+
+    .sliding-text .slide {
+        left: calc(50% - 150px);
+        width: 300px;
+    }
+
+    .top.top-page{
+        img {
+            display: block;
+            max-width: 200px;
+            position: absolute;
+            top: 80px;
+            opacity: .5;
+            z-index: 1;
+        }
+        h5 {
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    /* ===> MENU <=== */
+    // ===> TAB <=== //
+    .tab label {
+        justify-content: flex-start;
+    }
+
+
+    // ===> MOTIVATION  (CTA) <=== //
+    .motivation__container__copy h3 { font-size: 2em; }
+    .motivation__container__media { display: none; }
+
+
+    // ===> SERVICES <=== //
+    .services__media { overflow: hidden; }
+    .services__container .row { margin: 5em 0 12em 0; }
+    .services__container .row.normal img, .services__container .row.inverse img {
+        transform: translateX(0px);
+        opacity: 1;
+        max-width: 500px;
+    }
+    .services__copy { box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3); }
+    .services__copy__title { font-size: 2em; }
+
+    h3.bg-title { display: none!important; }
+
+
+    // ===> PROJECTS <=== //
+    .swiper-container { height: auto; }
+    .swiper-button-next, .swiper-button-prev {
+        width: 10px;
+    }
+
+    // ===> INFO PAGE <=== //
+    .info__container__wrapper .row .container {
+        padding: 2.5em;
+    }
+
+    // ===> PAGE <=== //
+    .top.top-page hgroup {
+        max-width: 100%;
+    }
+
+    .top.top-page .container hgroup h1 {
+        font-size: 3em;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    .offerta .offerta__container .offerta__container__items__item {
+        max-width: 100%;
+    }
+
+    .offerta .offerta__container h3 {
+        margin-top: 0;
+    }
+    
+    .content__container p {
+        font-size: 1.5em;
+    }
+
+    .offerta .offerta__container__items__item__copy p {
+        font-size: 1.3em;
+    }
+
+    // ===> PAGE: Tab <=== //
+    .current-tab:before {
+        display: none; 
+    }
+
+    nav.smartcrumb ul {
+        padding: 0;
+    }
+
+    nav.smartcrumb a {
+        text-align: center;
+    }
+
+    //anti GSAP
+    #tab-content-container { opacity: 1; }
+    .motivation {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    // news //
+    .news { 
+        padding: 1em; 
+        margin-top: 25px;
+    }
+
+    // ====> SIDEBAR: Single.html <=== //
+    /* Nascondo la sidebar */
+    body.hide-sidebar .sidebar__menu { left: -260px; }
+    .single-toggle { transition: .5s ease; }
+    .single-toggle.active { transform: translateX(260px); }
+
+    .top-single > .container {
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    
+    .top-single > .container hgroup { margin-top: 0; }
+    .top-single > .container img {
+        max-width: 250px;
+        top: 5em;
+        left: 0;
+        opacity: 0.8;
+    }
+
+    body.single-layout .container h1 { font-size: 4em; }
+    body.single-layout .container h5 { display: none;  }
+
+    .slogan h4 { font-size: 2em; }
+    .container.single-container .field:nth-child(2n+1) .row { flex-direction: column-reverse; }
+
+    .container.single-container .field img {
+        max-width: 315px;
+        display: block;
+        margin: 10px auto!important;
+    }
+
+    .container.single-container .field h3 { margin-top: 0; }
+
+    /* BLOG */
+    .posts__list__item {
+        flex-direction: column; 
+    }
+    .posts__list__item {
+        overflow-x: hidden;
+    }
+    .posts__list__item .posts__list__item__thumb {
+        width: auto;
+        height: 300px;
+    }
+
+
+}

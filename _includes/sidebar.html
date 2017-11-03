@@ -1,0 +1,51 @@
+<nav class="sidebar container">
+    <div class="sidebar__menu">
+        <ul class="sidebar__header">
+            <li class="logo-dds-single">
+                <a href="{{base.url}}/">
+                    {% include logo-page.svg %}  
+                </a>
+            </li>
+        </ul>
+
+        <ul id="general-menu" class="sidebar__items">
+            <li class="sidebar__item">
+                <a class="{% if page.url == '/' %}current{% endif %}" href="{{site.baseurl}}/index.html">Home</a>
+            </li>
+
+            <li class="sidebar__item">
+                <a class="{% if page.url == '/about.html' %}current{% endif %}" href="{{site.baseurl}}/about.html">Chi siamo</a>
+            </li>
+
+            <li class="sidebar__item">
+                <a class="{% if page.url contains 'servizi' %}current{% endif %}" href="{{site.baseurl}}/servizi/">Servizi</a>
+            </li>
+
+            <li class="top__header__nav__items__item">
+                <a class="{% if page.url == '/blog.html' %}current{% endif %}" href="{{site.baseurl}}/blog.html">Blog</a>
+            </li>
+
+            <li class="sidebar__item">
+                <a class="{% if page.url == '/contatti.html' %}current{% endif %}" href="{{site.baseurl}}/contatti.html">Contatti</a>
+            </li>
+        </ul>
+
+        <div class="sidebar__panel">
+            <span class="sidebar__panel__helmet">Categoria</span> {% include menu-category-list.html type="area-tematica"
+            %}
+            <ul>
+                <span class="sidebar__panel__helmet">La nostra offerta</span>
+                <li>
+                    {% include menu-service-list.html type="sviluppo" %} {% include menu-service-list.html type="comunicazione" %}
+                </li>
+
+                <li>
+                    {% include menu-service-list.html type="trasmissione" %} {% include menu-service-list.html type="fatturazione" %}
+                </li>
+                <li>
+                    {% include menu-service-list.html type="gestione" %} {% include menu-service-list.html type="conservazione" %}
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

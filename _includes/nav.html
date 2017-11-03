@@ -1,0 +1,72 @@
+<!-- NAVIGATION -->
+<nav class="top__header__nav container">
+    <input type='checkbox' id="toggle-menu">
+
+    <ul class="nav-header">
+        <li class="logo-dds">
+            <a href="{{base.url}}/">
+                {% include logo.svg %}  
+            </a>
+        </li>
+
+        <li>
+            <label for="toggle-menu">
+                <img src="{{site.baseurl}}/assets/icons/menu.svg" alt="Apri il menu">
+            </label>
+        </li>
+    </ul>
+
+    <div class="nav-menu">
+        <ul class="top__header__nav__items">
+            <li class="top__header__nav__items__item">
+                <a class="{% if page.url == '/' %}current{% endif %}" href="{{site.baseurl}}/index.html">Home</a>
+            </li>
+
+            <li class="top__header__nav__items__item">
+                <a class="{% if page.url == '/about.html' %}current{% endif %}" href="{{site.baseurl}}/about.html">Chi siamo</a>
+            </li>
+
+            <li class="top__header__nav__items__item">
+                <a class="{% if page.url contains 'servizi' %}current{% endif %} nav-dropdown">Servizi</a>
+            </li>
+
+            <li class="top__header__nav__items__item">
+                <a class="{% if  page.url contains 'blog' %}current{% endif %}" href="{{site.baseurl}}/blog.html">Blog</a>
+            </li>
+
+            <li class="top__header__nav__items__item">
+                <a class="{% if page.url == '/contatti.html' %}current{% endif %}" href="{{site.baseurl}}/contatti.html">Contatti</a>
+            </li>
+        </ul>
+
+        <div class="nav-panel">
+            {% include menu-category-list.html type="area-tematica" %}
+
+            <ul>
+                <li>
+                    {% include menu-service-list.html type="sviluppo" %} {% include menu-service-list.html type="comunicazione" %}
+                </li>
+
+                <li>
+                    {% include menu-service-list.html type="trasmissione" %} {% include menu-service-list.html type="fatturazione" %}
+                </li>
+                <li>
+                    {% include menu-service-list.html type="gestione" %} {% include menu-service-list.html type="conservazione" %}
+                </li>
+            </ul>
+            <div class="full-width-link">
+                <a href="{{site.baseurl}}/servizi/">Tutti i servizi</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- NAVIGATION RESPONSIVE -->
+<div class="nav-responsive">
+    <div class="logo-dds-single responsive">
+        <a href="{{base.url}}/">
+            {% include logo.svg %}  
+        </a>
+    </div>
+    {% include sidebar.html %}
+</div>

@@ -1,0 +1,45 @@
+@mixin verticalCenter($justContent, $bgColor) {
+    display: flex;
+    align-items: center;
+    justify-content: $justContent;
+    background-color: $bgColor;
+}
+
+@mixin patternBg($bgColor, $bgHeight) {
+    background-image: url(../assets/img/pattern.png);
+    background-color: $bgColor;
+    color: $text-lighter;
+    height: $bgHeight;
+}
+
+@mixin radialGradient($from, $to) {
+    background: $from;
+    background: -moz-radial-gradient(center, ellipse cover, $from 0%, $to 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, $from 0%, $to 100%);
+    background: radial-gradient(ellipse at center, $from 0%, $to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+/* Tipografia Fluida */
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+  
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+      & {
+        font-size: $min-font-size;
+        @media screen and (min-width: $min-vw) {
+          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        }
+        @media screen and (min-width: $max-vw) {
+          font-size: $max-font-size;
+        }
+      }
+    }
+  }

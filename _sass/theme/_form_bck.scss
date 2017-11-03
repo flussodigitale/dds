@@ -1,0 +1,188 @@
+@import 'variables';
+@import 'fonts';
+
+.contact {
+    position: relative;
+    height: 500px;
+    background-color: $light-blue-bg;
+    overflow-y: hidden;
+
+    h4 { 
+        color: $text-lighter;
+        font-family: 'Proxima Nova', sans-serif;
+        padding-top: 2em;
+    }
+}
+
+input, button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    display: block;
+    width: 70vw;
+    opacity: 0;
+    transition: all .5s;
+}
+
+input {
+    padding: .25rem 0;
+    border: 0;
+    border-bottom: 1px solid $trust-green-color;
+    outline: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+
+    transition: all .5s;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus, button:focus {
+    opacity: 1;
+    transform: translate(-50%, 0%);
+    transition: all .4s;
+    z-index: 10;
+}
+
+input:focus ~ input, input:focus ~ button {
+    transform: translate(-50%, 300%);
+    transition: all .5s ease-in;
+}
+
+input:focus ~ label .label-text {
+    transform: translate(-50%, 300%)
+}
+
+input:focus ~ .contact__tip {
+    opacity: 1;
+    color: $text-lighter;
+}
+
+input:focus ~ .contact__start, button:focus ~ .contact__start {
+    opacity: 0;
+}
+
+input:focus + label .label-text {
+    opacity: 1;
+    transform: translate(-50%, 20%);
+    transition: all .3s ease-in;
+}
+
+input:focus + label .nav-dot:before {
+    background: darken($trust-green-color, 5%);
+    box-shadow: 0 0 0 .15rem black, 0 0 .05 .26 $trust-green-color;
+}
+
+.contact__tip {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 70%;
+    opacity: 0;
+    color: white;
+    font-size: .875rem;
+    text-transform: uppercase;
+    text-align: right;
+    transition: opacity .25s .5s;
+}
+
+.contact__start, .contact__start--trigger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 70vw;
+    padding: .25rem 0;
+    line-height: 3.6rem;
+    text-align: center;
+    pointer-events: none;
+    cursor: pointer;
+    transition: opacity .4s .3s;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: $trust-green-color;
+    box-shadow: 5px 5px #60903c;
+    z-index: 100000000;
+}
+
+form:hover .contact__start--trigger {
+    background-color: #85bc5d;
+}
+
+.contact__start--trigger {
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.label-text {
+    position: absolute;
+    top: calc(50% - 4rem);
+    left: 50%;
+    transform: translate(-50%, -300%);
+    width: 70vw;
+    padding: 3rem 0 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0;
+    font-size: 1.1rem;
+    letter-spacing: .125rem;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.nav-dot {
+    cursor: pointer;
+    position: absolute;
+    padding: .625rem 1.25rem .625rem .625rem;
+    top: 52%;
+    right: 1.25rem;
+    &:before {
+        content: '';
+        display: inline-block;
+        border-radius: 50%;
+        width: .375rem;
+        height: .375rem;
+        margin-right: .625rem;
+        position: absolute;
+        background-color: $dark-blue-bg;
+        border: 0;
+        transition: all 0.25s;
+    }
+    &:hover:before {
+        width: .625rem;
+        height: .625rem;
+        margin-top: -.125rem;
+        margin-left: -.125rem;
+        background-color: darken($accent-color, 5%);
+    }
+}
+
+@for $i from 1 through 4 {
+    label[for="input-#{$i}"] .nav-dot {
+        margin-top: 0px + (25 * $i);
+    }
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: $trust-green-color;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    outline: none;
+    border: 0;
+}

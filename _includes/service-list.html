@@ -1,0 +1,35 @@
+{% if page.type == 'pagina-servizi' %}
+    <ul>
+        {% for servizio in site.pages %}
+            {% if servizio.type == include.type  %}
+                <li>
+                    <h4>{{ servizio.title }}</h4>
+                    <p>{{ servizio.meta }}</p>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    
+{% else %}
+
+    {% for servizio in site.pages %}
+        {% if servizio.type == include.type  %}
+        <div class="col-sm-12 col-md-6 col-lg-4 offerta__container__items__item">
+            <div class="offerta__container__items__item__content">
+                <div class="offerta__container__items__item__title">
+                    <a href="{{servizio.url}}">
+                        <img src="{{servizio.image}}" alt="{{servizio.altImg}}" />
+                        <h4>{{ servizio.title }}</h4>
+                    </a>
+                </div>
+                <div class="offerta__container__items__item__copy">
+                    <p>{{ servizio.description }}</p>
+                </div>
+                <a class="servizio-link" href="{{servizio.url}}">Leggi di più</a>         
+            </div>
+
+            
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endif%}

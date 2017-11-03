@@ -1,0 +1,63 @@
+---
+layout: page
+title: Servizi
+description: Comunicazione e Digital Media Marketing, ottimizzazione del flusso di lavoro e della gestione e trasmissione dei documenti.
+type: pagina-servizi
+
+target: la tua attività in digitale
+banner: /assets/img/bg/servizi.png
+---
+
+<div id="pagina-servizi" class="container content__container">
+    <img class="content__container__icon" src="{{site.baseurl}}/assets/img/services/pagina-servizi-aeroplano.svg" alt="Aeroplano">
+    <a class="content__container__link" href="{{site.baseurl}}/servizi/professionisti-ed-imprese/">
+        <span class="pulse"></span>
+        <h3 class="content__container__link__title">Gestione di tutti gli adempimenti telematici del tuo studio</h3>
+        <span>Approfondisci </span>
+    </a>
+
+    <div class="row content__container__items">
+        <div class="col-sm-12 col-md-6 content__container__items__item">
+            {% include service-list.html type='trasmissione' %}
+        </div>
+
+        <div class="col-sm-12 col-md-6 content__container__items__item">
+            {% include service-list.html type='fatturazione' %}
+        </div>
+    </div>
+    <div class="divider"></div>
+
+
+    <img class="content__container__icon" src="{{site.baseurl}}/assets/img/services/pagina-servizi-cubo.svg" alt="Aeroplano">
+    <a class="content__container__link" href="{{site.baseurl}}/servizi/visibilita-growbusiness/">
+        <span class="pulse"></span>
+        <h3 class="content__container__link__title">Pianifica la crescita del business attraverso il web </h3>
+        <span>Approfondisci Comunicazione e Design</span>
+    </a>
+    <div class="row content__container__items">
+        <div class="col-sm-12 col-md-6 content__container__items__item">
+            {% include service-list.html type='comunicazione' %}
+        </div>
+
+        <div class="col-sm-12 col-md-6 content__container__items__item">
+            {% include service-list.html type='sviluppo' %}
+        </div>
+    </div>
+    <div class="divider"></div>
+
+    <img class="content__container__icon" src="{{site.baseurl}}/assets/img/services/pagina-servizi-gerarchie.svg" alt="Aeroplano">
+    <a class="content__container__link" href="{{site.baseurl}}/servizi/ottimizzazione-backoffice/">
+        <span class="pulse"></span>
+        <h3 class="content__container__link__title">Gestione dei documenti e organizzazione del flusso di lavoro con strumenti di workflow</h3>
+        <span>Approfondisci Gestione e Conservazione</span>
+    </a>
+    <div class="row content__container__items">
+        <div class="col-sm-12 col-md-6 content__container__items__item">
+            {% include service-list.html type='gestione' %}
+        </div>
+
+        <div class="col-sm-12 col-md-6 content__container__items__item">
+            {% include service-list.html type='conservazione' %}
+        </div>
+    </div>
+</div>

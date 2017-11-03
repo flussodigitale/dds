@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "it" }}">
+
+  {% include head.html %}
+
+  <body class="single-layout">
+    {% include header-single.html headclass="top top-single" %}
+
+    <div class="arrow-down">
+      <img src="\assets\img\big-arrow-down.svg" alt="Freccia in basso">    
+    </div>
+
+    <div class="container single-container">
+        {{ content }}
+    </div>
+
+    <div class="single__extended">
+      <div class="single__extended__heading">
+        <h3>Desideri estendere i canali digitali per la tua attività?</h3> 
+        <p>Scopri gli altri servizi della categoria per ottenere tutti i vantaggi della nostra offerta!</p>
+      </div>
+
+      {% if page.url contains 'visibilita-growbusiness' %}
+        <div class="row">
+          {% include service-list.html type="sviluppo" %}
+          {% include service-list.html type="comunicazione" %}
+        </div>
+      {% elsif page.url contains 'professionisti-ed-imprese' %}
+      <div class="row">
+          {% include service-list.html type="trasmissione" %}
+          {% include service-list.html type="fatturazione" %}
+      </div>
+      {% else %}
+      <div class="row">
+          {% include service-list.html type="gestione" %}
+          {% include service-list.html type="conservazione" %}
+      </div>
+      {% endif %}
+
+  </div>
+
+
+    {% include form-home.html %}
+
+    {% include footer.html %}
+  </body>
+
+</html>

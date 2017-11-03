@@ -1,0 +1,97 @@
+---
+layout: page
+title: Comunicazione e Design
+meta: Meta description di Comunicazione e Design
+
+description: Siamo un riferimento ideale per tutti coloro che hanno bisogno di migliorare la comunicazione e la visibiltà, soprattutto nel contesto digitale. Ci occupiamo di graphic design, brand identity, web design e development, digital media marketing, seo management.
+type: area-tematica
+detail: visibilita-growbusiness
+target: Visibilità e Growbusiness
+# image: /assets/icons/servizi/icon-service-design-comunicazione.svg
+
+order: 1
+
+area1: Web Design & Sviluppo App
+area1-img-left: /assets/icons/servizi/icon-design.svg
+area1-description-left: Il web è il mezzo ideale  per trasmettere all’utente un messaggio in maniera chiara ed immediata ed è pertanto lo strumento indispensabile per fare crescere il proprio business. Il design e l'interattività  sono gli elementi essenziali di un sito che orientato ad un target prestabilito riesce a creare valore aggiunto attraverso la trasmissione di un messaggio mirato.
+
+area1-img-right: /assets/icons/servizi/icon-development-2.svg
+area1-description-right: Di recente gli utenti che utilizzano dispositivi mobile per navigare hanno superato quelli che utilizzano dispositivi desktop. E' stata superata la reticenza all'acquisto online  e sempre più persone cercano prodotti e servizi sul web. Il processo inarrestabile viene spinto dall'evoluzione tecnologica con connessioni sempre più veloce ed economiche. Inevitabilmente il Business verte sul digitale.
+
+
+area2: Comunicazione & Marketing
+area2-img-left: /assets/icons/servizi/icon-comunicazione.svg
+area2-description-left: La presenza nel web è una necessità che si è autoimposta ineluttabilmente. Adesso è fondamentale essere visti e capiti in un mondo affollato e veloce e per questo sono necessari strumenti nuovi e messaggi precisi da trasmettere se si vogliono ottenere risultati apprezzabili.
+
+area2-img-right: /assets/icons/servizi/icon-marketing.svg
+area2-description-right: Definito il target da raggiungere e impostata la comunicazione efficace non resta che essere visti. Scalare le serp di google di opportune business keyoword con strategie seo e azioni sem è una attività che deve essere affidata a professionisti. Campagne sui social e pay per click vanno ottimizzate cercando di ottenere il massimo rendimento dal click o like.
+---
+
+
+<!-- ============================================================= -->
+<!-- CONTENT                                                       -->
+<!-- ============================================================= -->
+<section class="content">
+    <h2>{{page.area1}}</h2>
+    <div class="container content__container">
+        <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <img class="content__container__img" src="{{page.area1-img-left}}" alt="Design">
+            <p class="content__container__text">
+            {{page.area1-description-left}}
+            </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+            <img class="content__container__img" src="{{page.area1-img-right}}" alt="Development">
+            <p class="content__container__text">
+            {{page.area1-description-right}}
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- RIQUADRO DELL'OFFERTA -->
+  <section class="offerta">
+    <div class="container offerta__container">
+      <h3>La nostra offerta</h3>
+      <div class="row offerta__container__items">
+        {% include service-list.html type='sviluppo' %}
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================================= -->
+<!-- CONTENT                                                       -->
+<!-- ============================================================= -->
+<section class="content">
+    <h2>{{page.area2}}</h2>
+    <div class="container content__container">
+        <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <img class="content__container__img" src="{{page.area2-img-left}}" alt="Marketing">
+            <p class="content__container__text">
+            {{page.area2-description-left}}
+            </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+            <img class="content__container__img" src="{{page.area2-img-right}}" alt="Seo Strategy">
+            <p class="content__container__text">
+            {{page.area2-description-right}}
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- RIQUADRO DELL'OFFERTA -->
+<section class="offerta">
+    <div class="container offerta__container">
+        <h3>La nostra offerta</h3>
+        <div class="row offerta__container__items">
+        {% include service-list.html type='comunicazione' %}
+        </div>
+    </div>
+</section>

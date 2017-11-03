@@ -1,0 +1,32 @@
+// ==> FONTS 
+// Proxima Nova
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/proxima-nova-light.eot'); /* IE9 Compat Modes */
+    src: url('fonts/proxima-nova-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/proxima-nova-light.woff') format('woff'), /* Modern Browsers */
+    url('fonts/proxima-nova-light.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/proxima-nova-bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/proxima-nova-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/proxima-nova-bold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/proxima-nova-bold.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
+}
+
+// Helvetica Condensed
+@font-face {
+    font-family: 'Helvetica Condensed';
+    src: url('fonts/HelveticaBoldCond.eot'); /* IE9 Compat Modes */
+    src: url('fonts/HelveticaBoldCond.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/HelveticaBoldCond.woff') format('woff'), /* Modern Browsers */
+    url('fonts/HelveticaBoldCond.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+// Nunito
+@import url('https://fonts.googleapis.com/css?family=Nunito:300');

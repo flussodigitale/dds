@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+Disallow: /assets/
+Disallow: /sitemap.xml
+Disallow: /feed.xml
+Disallow: /404.html

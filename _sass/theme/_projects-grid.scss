@@ -1,0 +1,81 @@
+.projects {
+    h4 {
+        padding: 20px;
+        background-color: rgb(239, 73, 79);
+        font-size: 2em!important;
+        position: absolute;
+        z-index: 100;
+        bottom: 0;
+        transform: translate(20px, 20px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+        a {
+            color: white;
+        }
+    }
+
+    .projects__container {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 10;
+    }
+}
+.projects__thumb {
+    a {
+        float: left;
+        width: 25%;
+        display: block;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+
+        &:hover {
+            .projects__thumb__copy {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+
+    .projects__thumb__copy {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: fade-out($dark-blue-bg, 0.2);
+        color: white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transform: scale(0.6);
+        transition: opacity $slow-transition, transform $medium-transition;
+
+        .projects__thumb__copy__title {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2em;
+            margin: 0;
+            padding: 25px;
+        }
+
+        .projects__thumb__copy__meta {
+            padding: 0px 15px;;
+            width: 100%;
+        }
+
+        span[class^="badge-"] {
+            font-style: italic;
+        }
+
+    }
+}

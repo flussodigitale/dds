@@ -1,0 +1,300 @@
+// ==> HEADER
+.top {
+    height: 100vh;
+    background: rgb(18,55,71); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(18,55,71,1) 0%, rgba(11,33,43,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(18,55,71,1) 0%,rgba(11,33,43,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(18,55,71,1) 0%,rgba(11,33,43,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#123747', endColorstr='#0b212b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#animation { position: absolute; }
+
+.big-logo{
+    width: 700px;
+    svg {
+        width: 100%; 
+    }
+}
+
+/* ==> Sliding text nella Home <== */
+.sliding-text {
+    .slide {
+        position: absolute;
+        left: calc(50% - 300px);
+        width: 600px;
+        bottom: 0;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+
+        h3 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #e4eef9;
+            font-weight: lighter;
+        }
+
+        h2 {
+            margin: 5px 0;
+            color: $accent-color;
+            font-size: 2em;
+        }
+        
+    }
+
+    #slide-1 { animation-name: sliding-text-1; }
+    #slide-2 { animation-name: sliding-text-2; }
+    #slide-3 { animation-name: sliding-text-3; }
+}
+
+.top .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+        position: relative;
+        font-size: 6em;
+        z-index: 100;
+        text-align: center;
+        line-height: 0.9em;
+        max-width: 50vw;
+        margin: 0 auto;
+        padding: 0;
+        text-shadow: -5px 1px 0px #1b4b61;
+        padding: 10px;
+        color: #f9f9f9;
+        text-transform: capitalize;
+    }
+
+    p { 
+        color: white;
+        font-size: 2.5em;
+        text-align: center;
+        max-width: 450px;
+        margin: 30px auto;
+    }
+}
+
+.top__header {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;  
+    background: transparent;
+    transition: $medium-transition; 
+
+    .top__header__container {
+        justify-content: space-between;
+    }
+
+    .top__header__nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .top__header__nav__items{
+            margin: 8px 0 0 0;
+            text-align: left;
+            background-color: $dark-blue-bg;
+            width: 100%;
+            left: 0;
+        }
+
+        label[for="toggle-menu"] {
+            cursor: pointer; 
+            img, svg {
+                width: 35px;             
+            }
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: -90px;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0px 5px 10px -5px black;
+            transition: $medium-transition;
+            opacity: 0;
+        }
+
+        [type="checkbox"]:checked {
+            & ~ .nav-menu {
+                margin-top: 0;
+                opacity: 1;
+            }
+          }
+
+        [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+            position : absolute;
+            left     : -9999px;
+        }
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+            position     : relative;
+            cursor       : pointer;
+        }
+
+        .top__header__nav__items__item {
+            display: inline-block;
+            a {
+                display: block;
+                color: $text-lighter;
+                font-weight: lighter;
+                padding: 25px 20px;
+
+                transition: $fast-transition;
+                &:hover {
+                    background-color: $dark-blue-bg;
+                    color: $text-lighter;
+                    box-shadow: inset 0px -5px 0px $accent-color;
+                }
+            }
+        }
+    }
+}
+
+/* ==> Nuovo Nav Header <== */
+ul.nav-header {
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+
+    .logo-dds {
+        width: 150px;
+        transition: $fast-transition;
+        
+    }
+
+    li:last-child {
+        width: 40px;
+        margin-left: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        label { width: 100%; }
+    }
+}
+
+.nav-panel {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #e4eef9;
+    text-align: left;
+    padding: 0 25px;
+
+    transition: opacity $medium-transition .2s, height $slow-transition, margin-bottom $slow-transition;
+    height: 0;
+    overflow-y: hidden;
+    opacity: 0;
+    margin-bottom: 0;
+
+    ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    a {
+        color: $text-darker;
+        padding: 4px;
+        display: block;
+        transition: $fast-transition; 
+        &:hover {
+            color: $accent-color;
+            box-shadow: -5px 0 0px $accent-color;
+        }
+    }
+}
+
+.nav-panel > ul { 
+    margin: 15px 0 0 0;
+    display: flex;
+}
+
+.nav-panel > ul > li {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.nav-panel > ul:first-child li a {
+    font-weight: bold;
+}
+
+.nav-panel.open-menu {
+    opacity: 1;
+    overflow: visible;
+    height: 310px;
+
+    .full-width-link {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid #d2dae2;
+
+        a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            &:hover {
+                box-shadow: none;
+                background-color: $accent-color;
+                color: white;
+            }
+        }
+    }
+}
+
+.nav-dropdown { 
+    cursor: pointer; 
+    transition: none;
+}
+.open-dropdown {
+    background-color: #e4eef9!important;
+    color: #0b212b!important;
+    box-shadow: none!important;
+}
+
+.scrolled .nav-menu {
+    box-shadow: none!important;
+}
+
+.scrolled .nav-panel.open-menu {
+    margin-bottom: 30px; 
+
+    .full-width-link {
+        bottom: 30px;
+    }
+}
+
+/* ==> Classi che si aggiungono allo scroll <== */
+header.nav-up {
+    top: -90px;
+}
+
+.scrolled {
+    position: fixed;
+    width: 100%;
+    background-color: $dark-blue-bg;
+
+    nav ul li.logo-dds {
+        width: 100px;
+    }
+}
+
+.extended-menu-scrolled .nav-panel.open-menu {
+    height: 330px;
+}
+
+.extended-menu-scrolled .nav-panel.open-menu .full-width-link {
+    bottom: 30px;
+}
+
+/* ==> Pagina selezionata selezionato <== */
+.current { color: $accent-color!important };

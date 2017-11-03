@@ -1,0 +1,96 @@
+---
+layout: page
+title: Gestione e Conservazione
+meta: Meta description Gestione e conservazione
+
+description: lorem ipsum dolor sit amet
+type: area-tematica
+detail: ottimizzazione-backoffice
+target: Ottimizzazione del Backoffice
+
+order: 3
+
+area1: Lorem & Ipsum
+area1-img-left: /assets/img/icons/icon-design-compasso.svg
+area1-description-left: Pensiamo che un sito web non sia solamente un biglietto da visita o una vetrina virtuale, ma sia un mezzo per comunicare, per trasmettere all’utente un messaggio in maniera chiara ed immediata, uno strumento indispensabile per fare crescere il proprio business e creare valore. La grafica, il design e la user experience di un sito sono gli elementi essenziali per ottenere questo risultato. (copiato da un altro sito online)
+
+area1-img-right: /assets/img/icons/icon-development-programmazione.svg
+area1-description-right: Lo sapevi che nel 2015 gli utenti che hanno navigato con dispositivi mobile hanno superato quelli connessi tramite computer desktop? Sapevi anche che gli utenti mobile sono molto più propensi all’acquisto e che non a caso nel 2015 oltre 490 milioni di transazioni con carta di credito sono state effettuate con dispositivi come l’iPhone della Apple? Il web è mobile! La rete oggi è accessibile e alla portata di tutti grazie alle connessioni 3G/4G e alla diffusione di device di ultima generazione. Su internet infatti sono in costante aumento gli utenti che utilizzano smartphone e tablet non solo per navigare, ma anche per ricercare prodotti o servizi e infine per effettuare acquisti.
+
+
+area2: Dolor & Amet
+area2-img-left: /assets/img/icons/icon-comunicazione-fumetti.svg
+area2-description-left: Pensiamo che un sito web non sia solamente un biglietto da visita o una vetrina virtuale, ma sia un mezzo per comunicare, per trasmettere all’utente un messaggio in maniera chiara ed immediata, uno strumento indispensabile per fare crescere il proprio business e creare valore. La grafica, il design e la user experience di un sito sono gli elementi essenziali per ottenere questo risultato. (copiato da un altro sito online)
+
+area2-img-right: /assets/img/icons/icon-comunicazione-seo.svg
+area2-description-right: Lo sapevi che nel 2015 gli utenti che hanno navigato con dispositivi mobile hanno superato quelli connessi tramite computer desktop? Sapevi anche che gli utenti mobile sono molto più propensi all’acquisto e che non a caso nel 2015 oltre 490 milioni di transazioni con carta di credito sono state effettuate con dispositivi come l’iPhone della Apple? Il web è mobile! La rete oggi è accessibile e alla portata di tutti grazie alle connessioni 3G/4G e alla diffusione di device di ultima generazione. Su internet infatti sono in costante aumento gli utenti che utilizzano smartphone e tablet non solo per navigare, ma anche per ricercare prodotti o servizi e infine per effettuare acquisti.
+---
+
+
+<!-- ============================================================= -->
+<!-- CONTENT                                                       -->
+<!-- ============================================================= -->
+<section class="content">
+    <h2>{{page.area1}}</h2>
+    <div class="container content__container">
+        <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <img class="content__container__img" src="{{page.area1-img-left}}" alt="INSERISCI ALT">
+            <p class="content__container__text">
+            {{page.area1-description-left}}
+            </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+            <img class="content__container__img" src="{{page.area1-img-right}}" alt="INSERISCI ALT">
+            <p class="content__container__text">
+            {{page.area1-description-right}}
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- RIQUADRO DELL'OFFERTA -->
+  <section class="offerta">
+    <div class="container offerta__container">
+      <h3>La nostra offerta</h3>
+      <div class="row offerta__container__items">
+        {% include service-list.html type='gestione' %}
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================================= -->
+<!-- CONTENT                                                       -->
+<!-- ============================================================= -->
+<section class="content">
+    <h2>{{page.area2}}</h2>
+    <div class="container content__container">
+        <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <img class="content__container__img" src="{{page.area2-img-left}}" alt="INSERISCI ALT">
+            <p class="content__container__text">
+            {{page.area2-description-left}}
+            </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+            <img class="content__container__img" src="{{page.area2-img-right}}" alt="INSERISCI ALT">
+            <p class="content__container__text">
+            {{page.area2-description-right}}
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- RIQUADRO DELL'OFFERTA -->
+<section class="offerta">
+    <div class="container offerta__container">
+        <h3>La nostra offerta</h3>
+        <div class="row offerta__container__items">
+        {% include service-list.html type='conservazione' %}
+        </div>
+    </div>
+</section>
