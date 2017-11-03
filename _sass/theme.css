@@ -876,6 +876,7 @@ html {
 .news__container__posts__post a {
   color: #0b212b;
   display: block;
+  padding: 20px;
 }
 .news__container__posts__post a:hover img {
   transform: scale(1.02);
