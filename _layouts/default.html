@@ -1,7 +1,44 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "it" }}">
 
-  {% include head.html %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <link rel="icon" href="{{site.baseurl}}/favicon.ico">
+    <meta name="description" content="{{ page.meta | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <meta name="author" content="Giulio Tiseo - Digital Documents Solution" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+    
+  
+    <!-- Normalize css: Make browsers render all elements more consistently. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  
+    <!-- FONTS CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  
+    <!-- BOOTSTRAP GRID CDN -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/grid/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/grid/bootstrap-grid.min.css">
+  
+    <!-- SWIPER CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/main.css">
+  
+    <!-- JQUERY CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <!-- PIXI CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.3/pixi.min.js"></script>
+    
+    <!-- {% include google-analytics.html %} -->
+  </head>
+  
 
   <body>
     {% if page.url == '/' %}
