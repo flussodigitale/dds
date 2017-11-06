@@ -32,7 +32,7 @@
       <p class="news__container__posts__post__author">da: {{page.author}} </p>
 
     {% else %}
-      <img src="{{ page.banner }}" alt="{{page.altImg}}" />
+      <img src="{{site.baseurl}}{{ page.banner }}" alt="{{page.altImg}}" />
       <hgroup>
         <h1>{{ page.title | escape }}</h1>
         <h5>{{ page.description }}</h5>
