@@ -18,20 +18,19 @@ Il Ministro dello Sviluppo Economico e il Ministro dell’Economia e delle Finan
 L’intervento è finalizzato a sostenere l’acquisto di software, hardware o servizi che consentano:
 </p>
 
-<ul>
-<li>Il miglioramento dell’efficienza aziendale</li>
-<li>la modernizzazione dell’organizzazione del lavoro tale da favorire l’utilizzo di strumenti tecnologici e forme di flessibilità, tra cui il telelavoro</li>
-<li>lo sviluppo di soluzioni di e-commerce</li>
-<li>la connettività a banda larga e ultra larga</li>
-<li>Il collegamento alla rete internet attraverso tecnologia satellitare</li>
-<li>formazione qualificata in ambito ITC</li>
-</ul>
+- Il miglioramento dell’efficienza aziendale
+- La modernizzazione dell’organizzazione del lavoro tale da favorire l’utilizzo di strumenti tecnologici e forme di flessibilità, tra cui il telelavoro
+- Lo sviluppo di soluzioni di e-commerce
+- La connettività a banda larga e ultra larga
+- Il collegamento alla rete internet attraverso tecnologia satellitare
+- Formazione qualificata in ambito ITC
+
 
 <p>
 L’importo del voucher viene erogato direttamente dal Ministero in un’unica soluzione, in base alla somma richiesta dall’impresa in sede di presentazione dell’istanza e concessa e approvata.
 </p>
 
-<h3>Beneficiari</h3>
+<h3>1. Beneficiari</h3>
 Possono presentare domanda per la concessione del beneficio le imprese in possesso dei seguenti requisiti:
 <ul>
     <li>caratteristiche di micro, piccola o media impresa, indipendentemente dalla loro forma giuridica e dal regime contabile adottato</li>
@@ -43,7 +42,7 @@ Possono presentare domanda per la concessione del beneficio le imprese in posses
 </ul>
 
 
-<h3>Attività e spese ammissibili</h3>
+<h3>2. Attività e spese ammissibili</h3>
 Vediamo nel dettaglio cosa è possibile finanziare con il voucher digitalizzazione:
 <ul>
     <li>l’acquisto di hardware, software e servizi di consulenza specialistica strettamente finalizzati alla digitalizzazione dei processi aziendali</li>
