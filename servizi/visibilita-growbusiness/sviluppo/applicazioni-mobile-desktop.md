@@ -16,7 +16,6 @@ keywords:
 type: sviluppo
 
 image: /assets/icons/servizi/icon-web-development.svg
-banner: /assets/img/bg/web-development.png
 altImg: Icona Sviluppo App
 ---
 <div class="slogan">

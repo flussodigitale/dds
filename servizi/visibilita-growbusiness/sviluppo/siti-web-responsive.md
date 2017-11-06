@@ -17,7 +17,6 @@ keywords: migliore usabilità - ottimizzazione dell'esperienza utente - stile un
 type: sviluppo
 
 image: /assets/icons/servizi/icon-mini-web-design.svg
-banner: /assets/img/bg/web-design.png
 altImg: Icona Web Design
 ---
 <div class="slogan">

@@ -34,10 +34,14 @@ ul.sidebar__header {
 
 .top-single > .container {
     flex-direction: column;
-    justify-content: flex-end!important;
 
     hgroup {
         margin-top: 15px;
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
 
         h5 {
             font-size: 1.2em;
@@ -105,7 +109,7 @@ ul.sidebar__header {
 .slogan {
     h4 {
         padding: 0px 0 80px 0;
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
         color: $light-blue-bg;
         border-bottom: 1px solid lightgray;
