@@ -37,8 +37,7 @@
 
 #motivation.motivation-show {
     border-top: 20px solid #ef494f;
-    border-bottom: 20px solid #ef494f;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transform: translateY(0px);
     opacity: 1;
 }
@@ -340,10 +339,29 @@
 }
 
 .footer__legal {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     background-color: #656565;
     color: white;
     padding: 10px;
+
+    p {
+        margin: 5px;
+    }
+}
+
+#credits {
+    background-color: #161616;
+    border: 0;
+    color: white;
+    text-transform: lowercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#credits:hover {
+    color: #EF494F;
 }
 
 // ==> BLOG BOX <== //
@@ -374,7 +392,6 @@
 .news__container__posts__post__date, .news__container__posts__post__author {
     text-transform: lowercase;
     font-variant: small-caps;
-    font-size: 1em;
     margin: 0;
 }
 

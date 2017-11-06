@@ -55,12 +55,12 @@ a {
 
 ul {
   list-style-type: none;
+  font-family: 'Nunito', sans-serif;
 }
 
 p {
   margin-top: 0;
   line-height: 1.4em;
-  font-size: 1.1em;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -428,7 +428,8 @@ html {
 }
 
 .article {
-  padding-top: 5em;
+  padding: 5em;
+  background-color: #f4f4f4;
 }
 
 .top.top-article {
@@ -447,11 +448,9 @@ html {
   text-transform: uppercase;
   font-family: "Proxima Nova", Montserrat, sans-serif, serif;
   letter-spacing: -2px;
-  font-size: 4em;
   margin-bottom: 0.5em;
 }
 .top-article .container hgroup h5 {
-  font-size: 1.5em;
   font-weight: 100;
   max-width: 700px;
   margin: 0 auto;
@@ -485,7 +484,6 @@ html {
   margin: 10px 0;
 }
 .top-article.post .container .news__container__posts__post__date, .top-article.post .container .news__container__posts__post__author {
-  font-size: 2em;
   margin: 0;
   z-index: 10;
 }
@@ -505,6 +503,11 @@ html {
   background-color: white;
   padding: 60px;
   box-shadow: 0px -10px 10px -10px rgba(0, 0, 0, 0.42);
+  border: 1px solid lightgray;
+}
+.article__container ul li {
+  font-size: 1.1em;
+  margin: 5px 0;
 }
 
 /* FINE ARTICOLI */
@@ -546,8 +549,7 @@ html {
 
 #motivation.motivation-show {
   border-top: 20px solid #ef494f;
-  border-bottom: 20px solid #ef494f;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
   transform: translateY(0px);
   opacity: 1;
 }
@@ -854,10 +856,28 @@ html {
 }
 
 .footer__legal {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
   background-color: #656565;
   color: white;
   padding: 10px;
+}
+.footer__legal p {
+  margin: 5px;
+}
+
+#credits {
+  background-color: #161616;
+  border: 0;
+  color: white;
+  text-transform: lowercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#credits:hover {
+  color: #EF494F;
 }
 
 .news {
@@ -885,7 +905,6 @@ html {
 .news__container__posts__post__date, .news__container__posts__post__author {
   text-transform: lowercase;
   font-variant: small-caps;
-  font-size: 1em;
   margin: 0;
 }
 
@@ -1937,7 +1956,6 @@ body.hide-sidebar .sidebar__menu {
 }
 .top .container h1 {
   position: relative;
-  font-size: 6em;
   z-index: 100;
   text-align: center;
   line-height: 0.9em;
@@ -1951,7 +1969,6 @@ body.hide-sidebar .sidebar__menu {
 }
 .top .container p {
   color: white;
-  font-size: 2.5em;
   text-align: center;
   max-width: 450px;
   margin: 30px auto;
@@ -3007,5 +3024,28 @@ input::-webkit-inner-spin-button {
   .posts__list__item .posts__list__item__thumb {
     width: auto;
     height: 300px;
+  }
+
+  .article {
+    padding: 0;
+  }
+
+  .article__container {
+    margin-top: 0;
+  }
+}
+/* TIPOGRAFIA FLUIDA */
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 18px;
   }
 }

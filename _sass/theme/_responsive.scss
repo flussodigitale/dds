@@ -329,5 +329,28 @@ and (max-device-width : 1024px)  {
         height: 300px;
     }
 
+    .article {
+        padding: 0;
+    }
 
+    .article__container {
+        margin-top: 0;
+    }
+
+
+}
+
+/* TIPOGRAFIA FLUIDA */
+html {
+    font-size: 14px;
+  }
+@media screen and (min-width: 320px) {
+html {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+}
+}
+@media screen and (min-width: 1000px) {
+html {
+    font-size: 18px;
+}
 }
