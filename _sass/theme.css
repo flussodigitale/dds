@@ -2463,7 +2463,7 @@ fieldset:not(#domanda-2) {
 #prev-field {
   box-shadow: none;
   position: absolute;
-  bottom: 47px;
+  bottom: 51px;
   right: 0;
   box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.25);
 }
