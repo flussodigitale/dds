@@ -4,7 +4,7 @@
 
     <ul class="nav-header">
         <li class="logo-dds">
-            <a href="{{base.url}}/">
+            <a href="{{site.baseurl}}/">
                 {% include logo.svg %}  
             </a>
         </li>
@@ -19,7 +19,7 @@
     <div class="nav-menu">
         <ul class="top__header__nav__items">
             <li class="top__header__nav__items__item">
-                <a class="{% if page.url == '/' %}current{% endif %}" href="{{site.baseurl}}/index.html">Home</a>
+                <a class="{% if page.url == '/' %}current{% endif %}" href="{{site.baseurl}}/">Home</a>
             </li>
 
             <li class="top__header__nav__items__item">
