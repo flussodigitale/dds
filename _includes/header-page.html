@@ -22,7 +22,7 @@
   <div class="container">
     
     {% if page.url contains 'news' %}
-      <div class="dynamic-banner" style="background-image: url({{page.image}});"></div>
+      <div class="dynamic-banner" style="background-image: url({{site.baseurl}}/{{page.image}});"></div>
       <hgroup>
         <h1>{{ page.title | escape }}</h1>
         <h5>{{ page.description }}</h5>
