@@ -1929,7 +1929,7 @@ body.hide-sidebar .sidebar__menu {
   animation-iteration-count: infinite;
 }
 .sliding-text .slide h3 {
-  font-size: 1.8em;
+  font-size: 1.3em;
   margin: 0;
   color: #e4eef9;
   font-weight: lighter;
@@ -1937,7 +1937,7 @@ body.hide-sidebar .sidebar__menu {
 .sliding-text .slide h2 {
   margin: 5px 0;
   color: #ef494f;
-  font-size: 2em;
+  font-size: 1.1em;
 }
 .sliding-text #slide-1 {
   animation-name: sliding-text-1;
