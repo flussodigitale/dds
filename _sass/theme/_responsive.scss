@@ -337,6 +337,12 @@ and (max-device-width : 1024px)  {
     }
 
 
+    /* Pagina Chi siamo */
+    .info__container__wrapper .row h2:after, .info__container__wrapper .row h2:before {
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
 /* TIPOGRAFIA FLUIDA */
