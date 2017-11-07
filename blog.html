@@ -9,7 +9,7 @@ banner: assets/img/bg/banner-blog.png
     <div class="posts__list">
         {% for news in site.posts %}
 
-            <a href="{{news.permalink}}">
+            <a href="{{site.baseurl}}/{{news.permalink}}">
                 <div class="posts__list__item row">
                     <div class="posts__list__item__thumb col-sm-5">
                         <img src="{{news.image}}" alt="{{news.altImg}}" />
