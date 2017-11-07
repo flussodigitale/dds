@@ -393,6 +393,10 @@ html {
   margin-top: 3em;
 }
 
+.posts__list a {
+  display: block;
+}
+
 .posts__list__item {
   color: black;
   display: flex;
@@ -409,12 +413,16 @@ html {
 .posts__list__item .posts__list__item__thumb {
   width: 300px;
   height: 200px;
+  padding: 0;
 }
 .posts__list__item .posts__list__item__thumb img {
   max-height: 100%;
 }
 .posts__list__item .posts__list__item__copy {
   padding: 0 30px;
+}
+.posts__list__item .posts__list__item__copy h2 {
+  margin: 0;
 }
 .posts__list__item .posts__list__item__copy span {
   font-style: italic;
@@ -508,6 +516,17 @@ html {
 .article__container ul li {
   font-size: 1.1em;
   margin: 5px 0;
+}
+
+.go-to-container {
+  justify-content: center;
+  margin-top: 30px;
+}
+.go-to-container .go-to {
+  margin: 0px 10px;
+}
+.go-to-container .go-to a {
+  color: #ef494f;
 }
 
 /* FINE ARTICOLI */
