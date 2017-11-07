@@ -15,7 +15,7 @@ keywords:
 #il type indica la categoria
 type: sviluppo
 
-image: /assets/icons/servizi/icon-web-development.svg
+image: assets/icons/servizi/icon-web-development.svg
 altImg: Icona Sviluppo App
 ---
 <div class="slogan">
