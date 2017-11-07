@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  Primo articolo dopo il benvenuto!
-date:   2017-10-02 18:22:00 +0200
-author: Giulio Tiseo
-category: news
-tags: [web, jekyll]
+title:  Invia e ricevi fatture elettroniche tra privati
+date:   2017-11-07 16:45:00 +0200
+author: Digital Documents Solution
+category: [news, fatturazione]
+tags: [fattura elettronica, privati]
 permalink: /news/secondo-articolo/
 
+meta: Un servizio che automatizza la generazione, la trasmissione, il monitoraggio e la gestione del processo di fatturazione elettronica tra privati (Aziende e soggetti con P.IVA).
 
-meta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quippe habes enim a rhetoribus; Nunc de hominis summo bono quaeritur; Sint modo partes vitae beatae. Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Ergo, si semel tristior effectus est, hilara vita amissa est?
-image: https://source.unsplash.com/collection/358840/800x600
-altImg: Descrizione immagine
+image: assets/img/news/invia-ricevi-fatture-elettroniche-fra-privati.jpg
+altImg: Fatture elettroniche fra privati
 ---
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quippe: habes enim a rhetoribus; Nunc de hominis summo bono quaeritur; Sint modo partes vitae beatae. Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Ergo, si semel tristior effectus est, hilara vita amissa est? Apparet statim, quae sint officia, quae actiones. Dic in quovis conventu te omnia facere, ne doleas. Duo Reges: constructio interrete. </p>
 

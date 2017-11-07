@@ -905,6 +905,7 @@ html {
   text-transform: lowercase;
   font-variant: small-caps;
   margin: 0;
+  font-size: 16px;
 }
 
 .news__container__posts__post {
@@ -1929,7 +1930,7 @@ body.hide-sidebar .sidebar__menu {
   animation-iteration-count: infinite;
 }
 .sliding-text .slide h3 {
-  font-size: 1.8em;
+  font-size: 1.3em;
   margin: 0;
   color: #e4eef9;
   font-weight: lighter;
@@ -1937,7 +1938,7 @@ body.hide-sidebar .sidebar__menu {
 .sliding-text .slide h2 {
   margin: 5px 0;
   color: #ef494f;
-  font-size: 2em;
+  font-size: 1.1em;
 }
 .sliding-text #slide-1 {
   animation-name: sliding-text-1;
@@ -2036,6 +2037,7 @@ body.hide-sidebar .sidebar__menu {
   color: #e1e3e6;
   font-weight: lighter;
   padding: 25px 20px;
+  font-size: 16px;
   transition: 0.1s ease-in-out;
 }
 .top__header .top__header__nav .top__header__nav__items__item a:hover {
