@@ -2212,6 +2212,14 @@ header.nav-up {
   display: none;
 }
 
+.tab-label-container {
+  display: flex;
+  width: 100%;
+}
+.tab-label-container div[class^="col-"] {
+  padding: 0;
+}
+
 .tab label img {
   width: 70px;
   margin: 0 30px;
