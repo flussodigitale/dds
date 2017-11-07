@@ -2937,9 +2937,13 @@ input::-webkit-inner-spin-button {
   }
 
   .top.top-page .container hgroup h1 {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 25px;
     padding: 0;
+  }
+
+  .top.top-page .container hgroup h5 {
+    font-size: 1em;
   }
 
   .offerta .offerta__container .offerta__container__items__item {
@@ -2951,11 +2955,11 @@ input::-webkit-inner-spin-button {
   }
 
   .content__container p {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .offerta .offerta__container__items__item__copy p {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .current-tab:before {
