@@ -2251,7 +2251,7 @@ header.nav-up {
 
 .tab input[type=radio]:checked + label {
   background-color: #ffffff;
-  color: #ef494f;
+  color: #2e8db7;
 }
 .tab input[type=radio]:checked + label img {
   opacity: 1;
