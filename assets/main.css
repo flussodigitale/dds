@@ -2205,7 +2205,7 @@ header.nav-up {
 /* Labels */
 .tab {
   position: relative;
-  background: white;
+  background: #fefefe;
 }
 
 .tab input[type="radio"] {
@@ -2215,6 +2215,7 @@ header.nav-up {
 .tab-label-container {
   display: flex;
   width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .tab-label-container div[class^="col-"] {
   padding: 0;
