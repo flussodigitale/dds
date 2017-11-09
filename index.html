@@ -1,33 +1,14 @@
 ---
 layout: default
-title: Digital Documents Solution
-meta: Meta description della home page
+description: La DDS è un team di professionisti specializzati nella fatturazione elettronica, conservazione digitale, sviluppo di app mobile e siti web
 
-target: Home - flussodigitale.it
+target: flussodigitale.it
 
 priority: 1.0
 ---
 {% include tab.html %}
 
-<!-- STATIC BANNER -->
-<section id="motivation" class="motivation">
-  <div class="motivation__container container">
-    <div class="row">
-      <div class="col motivation__container__copy">
-        <h1>Scegli di lavorare in modo ancor più efficiente attraverso la <span class="evidenzia" style="display: block;">digital transformation</span></h1>
-        <h3>
-          Le aziende che adottano il digitale hanno risultati eccellenti in tutte le aree legate alla crescita
-        </h3>
-        <a href="#" class="button">inizia ora</a>
-      </div>
-
-      <div class="col motivation__container__media">
-        <img src="assets/img/success.svg" alt="New idea Icon" />
-      </div>
-    </div>
-  </div>
-</section>
-
+{% include banner-featured.html%}
 {% include services.html %}
 {% include slide-services.html %}
 
@@ -46,12 +27,13 @@ priority: 1.0
             <p class="news__container__posts__post__author">da: {{post.author}} </p>
 
             <div class="news__container__posts__post__media">
-              <img src="{{post.image}}" alt="{{post.altImg}}" />
+              <img src="{{site.baseurl}}/{{post.image}}" alt="{{post.altImg}}" />
+            </div>
+
+            <div class="news__container__posts__post__copy">
+                <p>{{post.meta}}</p>
             </div>
           </a>
-          <div class="news__container__posts__post__copy">
-            <p>{{post.meta}}</p>
-          </div>
         </div>
       {% endfor %}
     </div>

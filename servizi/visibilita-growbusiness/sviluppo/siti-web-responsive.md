@@ -16,8 +16,7 @@ keywords: migliore usabilità - ottimizzazione dell'esperienza utente - stile un
 #il type indica la categoria
 type: sviluppo
 
-image: /assets/icons/servizi/icon-mini-web-design.svg
-banner: /assets/img/bg/web-design.png
+image: assets/icons/servizi/icon-mini-web-design.svg
 altImg: Icona Web Design
 ---
 <div class="slogan">

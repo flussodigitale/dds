@@ -29,7 +29,7 @@
         animation-iteration-count: infinite;
 
         h3 {
-            font-size: 1.8em;
+            font-size: 1.3em;
             margin: 0;
             color: #e4eef9;
             font-weight: lighter;
@@ -38,7 +38,7 @@
         h2 {
             margin: 5px 0;
             color: $accent-color;
-            font-size: 2em;
+            font-size: 1.1em;
         }
         
     }
@@ -56,7 +56,6 @@
     text-align: center;
     h1 {
         position: relative;
-        font-size: 6em;
         z-index: 100;
         text-align: center;
         line-height: 0.9em;
@@ -71,7 +70,6 @@
 
     p { 
         color: white;
-        font-size: 2.5em;
         text-align: center;
         max-width: 450px;
         margin: 30px auto;
@@ -145,6 +143,7 @@
                 color: $text-lighter;
                 font-weight: lighter;
                 padding: 25px 20px;
+                font-size: 16px;
 
                 transition: $fast-transition;
                 &:hover {

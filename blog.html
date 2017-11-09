@@ -2,20 +2,20 @@
 layout: default
 title: Articoli dal blog
 metaDescription: Meta description della pagina news
-banner: /assets/img/bg/banner-blog.png
+banner: assets/img/bg/banner-blog.png
 ---
 
 <div class="posts container">
     <div class="posts__list">
         {% for news in site.posts %}
 
-            <a href="{{news.permalink}}">
-                <div class="posts__list__item">
-                    <div class="posts__list__item__thumb">
+            <a href="{{site.baseurl}}/{{news.permalink}}">
+                <div class="posts__list__item row">
+                    <div class="posts__list__item__thumb col-sm-5">
                         <img src="{{news.image}}" alt="{{news.altImg}}" />
                     </div>
 
-                    <div class="posts__list__item__copy">
+                    <div class="posts__list__item__copy col-sm-7">
                         <h2 href="{{news.permalink}}">{{news.title}}</h2>
                         <span>Pubblicato da: {{news.author}}, il: {{news.date | date: "%d/%m/%Y"}}</span>
                         <p>{{news.meta}}</p>

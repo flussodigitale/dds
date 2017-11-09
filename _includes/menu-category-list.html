@@ -1,10 +1,10 @@
-{% assign area = (site.pages | sort: 'order') %}
+{%- assign area = (site.pages | sort: 'order') -%}
 <ul>
-    {% for category in area %}
-        {% if category.type == include.type  %}
+    {%- for category in area -%}
+        {%- if category.type == include.type  -%}
             <li>
                 <a class="{% if page.url contains {{category.detail}} %}current-menu{% endif %}" href="{{site.baseurl}}/servizi/{{category.detail}}">{{ category.title }}</a>
             </li>
-        {% endif %}
-    {% endfor %}
+        {%- endif -%}
+    {%- endfor -%}
 </ul>

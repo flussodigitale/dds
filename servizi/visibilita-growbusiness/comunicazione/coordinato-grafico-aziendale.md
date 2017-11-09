@@ -12,7 +12,7 @@ description: La percezione e la reputazione del tua attività nei confronti del 
 #il type indica la categoria
 type: comunicazione
 
-image: /assets/icons/servizi/icon-brand-identity.svg
+image: assets/icons/servizi/icon-brand-identity.svg
 altImg: Icona Brand Identity
 ---
 <div class="slogan">
