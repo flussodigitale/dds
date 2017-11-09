@@ -3,27 +3,19 @@ layout: page
 title: Gestione e Conservazione
 meta: Meta description Gestione e conservazione
 
-description: lorem ipsum dolor sit amet
+description: Gestione e Conservazione dei documenti digitali
 type: area-tematica
 detail: ottimizzazione-backoffice
 target: Ottimizzazione del Backoffice
 
 order: 3
 
-area1: Lorem & Ipsum
-area1-img-left: /assets/img/icons/icon-design-compasso.svg
-area1-description-left: Pensiamo che un sito web non sia solamente un biglietto da visita o una vetrina virtuale, ma sia un mezzo per comunicare, per trasmettere all’utente un messaggio in maniera chiara ed immediata, uno strumento indispensabile per fare crescere il proprio business e creare valore. La grafica, il design e la user experience di un sito sono gli elementi essenziali per ottenere questo risultato. (copiato da un altro sito online)
+area1: Gestione documentale
+area1-img-left: assets/img/icons/icon-design-compasso.svg
+area1-description-left: Un sistema di archiviazione efficente parte dalla cattura dei documenti e termina con la ricerca. Il nostro si integra con tutti i gestionali per l'inserimento automatico dei documanti, ha un plugin per outlook per le mail è un remote client per archiviare la documentazione su pc, solutionscan per catturare e indicizzare il cartaceo. La ricerca avviene non soltanto attraverso i campi indice dei documenti ma attraverso un pratica ricerca fulltext sui contenuti degli stessi. Gli utenti che accedono possono consultare solo la documentazione di interesse è quindi enorme importanza è stata data alla profilazione degli utenti e alla gestione dei permessi di visualizzazione e di scrittura. File di log tracciano tutte le azioni compiute.
 
-area1-img-right: /assets/img/icons/icon-development-programmazione.svg
-area1-description-right: Lo sapevi che nel 2015 gli utenti che hanno navigato con dispositivi mobile hanno superato quelli connessi tramite computer desktop? Sapevi anche che gli utenti mobile sono molto più propensi all’acquisto e che non a caso nel 2015 oltre 490 milioni di transazioni con carta di credito sono state effettuate con dispositivi come l’iPhone della Apple? Il web è mobile! La rete oggi è accessibile e alla portata di tutti grazie alle connessioni 3G/4G e alla diffusione di device di ultima generazione. Su internet infatti sono in costante aumento gli utenti che utilizzano smartphone e tablet non solo per navigare, ma anche per ricercare prodotti o servizi e infine per effettuare acquisti.
-
-
-area2: Dolor & Amet
-area2-img-left: /assets/img/icons/icon-comunicazione-fumetti.svg
-area2-description-left: Pensiamo che un sito web non sia solamente un biglietto da visita o una vetrina virtuale, ma sia un mezzo per comunicare, per trasmettere all’utente un messaggio in maniera chiara ed immediata, uno strumento indispensabile per fare crescere il proprio business e creare valore. La grafica, il design e la user experience di un sito sono gli elementi essenziali per ottenere questo risultato. (copiato da un altro sito online)
-
-area2-img-right: /assets/img/icons/icon-comunicazione-seo.svg
-area2-description-right: Lo sapevi che nel 2015 gli utenti che hanno navigato con dispositivi mobile hanno superato quelli connessi tramite computer desktop? Sapevi anche che gli utenti mobile sono molto più propensi all’acquisto e che non a caso nel 2015 oltre 490 milioni di transazioni con carta di credito sono state effettuate con dispositivi come l’iPhone della Apple? Il web è mobile! La rete oggi è accessibile e alla portata di tutti grazie alle connessioni 3G/4G e alla diffusione di device di ultima generazione. Su internet infatti sono in costante aumento gli utenti che utilizzano smartphone e tablet non solo per navigare, ma anche per ricercare prodotti o servizi e infine per effettuare acquisti.
+area1-img-right: assets/img/icons/icon-development-programmazione.svg
+area1-description-right: Avere tutta la documentazione a portata di mano è il primo fondamentale passo. Ora non resta che implementare i moduli ECM e BPM. Con il Business Process Management (BPM) è possibile creare flusso di lavoro e ottimizzare i processi di lavoro. Il designer incorporato consente la creazione di maschere e flussi logici senza essere costretti a  scrivere codici integrando anche singole attività in sistemi di gestione già presenti. Con l'Entrenprise Content Management  (ECM) è possibile pubblicare portali intranet/internet con i quali condividere informazioni e documenti. E' possibile fare tutto partendo da un progetto su misura realizzato insieme o decidere di partire solo con alcuni moduli investendo il minimo. Il sistema integra  il portale di conservazione digitale che ti consente di distruggere il cartaceo... ed il bello deve ancora venire la responsabilità della conservazione ce la prendiamo noi.
 ---
 
 
@@ -56,41 +48,7 @@ area2-description-right: Lo sapevi che nel 2015 gli utenti che hanno navigato co
     <div class="container offerta__container">
       <h3>La nostra offerta</h3>
       <div class="row offerta__container__items">
-        {% include service-list.html type='gestione' %}
+        {% include service-list.html type='conservazione' %}
       </div>
     </div>
   </section>
-
-<!-- ============================================================= -->
-<!-- CONTENT                                                       -->
-<!-- ============================================================= -->
-<section class="content">
-    <h2>{{page.area2}}</h2>
-    <div class="container content__container">
-        <div class="row">
-        <div class="col-sm-12 col-md-6">
-            <img class="content__container__img" src="{{site.baseurl}}/{{page.area2-img-left}}" alt="INSERISCI ALT">
-            <p class="content__container__text">
-            {{page.area2-description-left}}
-            </p>
-        </div>
-
-        <div class="col-sm-12 col-md-6">
-            <img class="content__container__img" src="{{site.baseurl}}/{{page.area2-img-right}}" alt="INSERISCI ALT">
-            <p class="content__container__text">
-            {{page.area2-description-right}}
-            </p>
-        </div>
-        </div>
-    </div>
-</section>
-
-<!-- RIQUADRO DELL'OFFERTA -->
-<section class="offerta">
-    <div class="container offerta__container">
-        <h3>La nostra offerta</h3>
-        <div class="row offerta__container__items">
-        {% include service-list.html type='conservazione' %}
-        </div>
-    </div>
-</section>
