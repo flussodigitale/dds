@@ -1,0 +1,224 @@
+@import 'variables';
+
+/* STEPS */
+.contact {
+    background-color: #123747;
+    text-align: center;
+    position: relative;
+
+    .content-contact {
+        margin: 0px auto;
+        text-align: center;
+        width: 600px;
+        position: relative;
+        height: 100%;
+    }
+
+    form {
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type=checkbox], input[type=radio] {
+        position: absolute;
+        left: -999999px;
+    }
+
+    label.pointer-selector {
+        cursor: pointer;
+    }
+
+    input[type=checkbox]:checked + label, input[type=radio]:checked + label  {
+        background-color:#78b54b!important;
+        color: white!important;        
+    }
+
+}
+
+#wrapper-contact {
+    background-color: transparent;
+    width: 600px;
+    overflow: hidden;
+}
+
+#steps {
+    width: 600px;
+    overflow: hidden;
+}
+
+.step {
+    float: left;
+    width: 600px;
+}
+
+/* NAVIGATION */
+#navigation {
+    border-top: 1px solid #0b212b;
+}
+
+#navigation ul {
+    list-style: none;
+    float: left;
+    margin-left: 22px;
+}
+
+#navigation ul li {
+    float: left;
+    position: relative;
+    margin: 0px 2px;
+}
+
+#navigation ul li a {
+    display: block;
+    height: 45px;
+    background-color: #0b212b;
+    color: rgba(255, 255, 255, 0.23);
+    outline: none;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0px 10px;
+    font-size: .7em;
+    border: none;
+}
+
+#navigation ul li a:hover,
+#navigation ul li.selected a{
+    background: #ef494f;
+    color: #fff;
+}
+
+/* STEPS */
+#steps form {
+    fieldset {
+        border: none;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    legend {
+        text-align: left;
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+        float: left;
+        width: 590px;
+        padding: 5px 0px 5px 10px;
+        margin: 10px 0px;
+        font-weight: 100;
+    }
+
+    .step {
+        input[type="text"], input[type="email"], input[type="number"]{
+            text-align: center;
+            box-shadow: 0px 0px 3px #aaa;
+            display: block;
+            width: 100%;
+            padding: 5px;
+            font-size: 1.5em;
+            border-radius: 5px;
+            border: 0;
+            background-color: transparent;
+            color: white;
+            &:focus {
+                outline: none !important;
+                box-shadow: 0 0 3px #78b54b;
+            }
+        }
+
+    }
+    p {
+        float: left;
+        clear: both;
+        margin: 5px 0px;
+        width: 400px;
+        padding: 10px;
+        margin-left: 100px;
+
+        label {
+            width :160px;
+            float: left;
+            margin-right: 15px;
+            line-height: 26px;
+            color: rgba(255,255,255, 0.3);
+            font-weight: 100;
+            &:hover {
+                background-color: $dark-blue-bg;
+            }
+        }
+    }
+
+    #step-1 {
+        hgroup {
+            margin: 20px 0;
+            h5 {
+                margin: 0;
+                font-size: 2em;
+                color: white;
+            }
+            h6 {
+                margin: 0;
+                font-size: 1em;
+                color: white;
+                font-weight: 100;
+            }
+        }
+    }
+
+    #step-2 {
+        label {
+            text-align: left;
+            padding: 2px 5px;
+            margin: 3px;
+            transition: $fast-transition;
+        }
+
+        p {
+            border-bottom: 1px solid rgba(211, 211, 211, 0.15);
+        }
+        p:last-child { border: none; }
+    }
+}
+
+#send {
+    background-color: $trust-green-color;
+    border: none;
+    padding: 20px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: $fast-transition;
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* CHECK */
+span.checked{
+    background:transparent url(img/validation/checked.png) no-repeat top left;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+span.error{
+    background:transparent url(img/validation/error.png) no-repeat top left;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+

@@ -1,79 +1,123 @@
 <!-- FORM   -->
 <section class="contact">
-    <hgroup>
-        <h5>Contattarci è semplicissimo!</h5>
-        <h6>Ci bastano pochissime informazioni per entrare in contatto con te</h6>  
-    </hgroup>  
-
-    <a class="button" href="#" id="trigger-form">Inizia ora</a>
-    <a class="button" href="#" id="next-field" class="hide">Vai avanti</a>
-    <a class="button" href="#" id="prev-field" class="hide-prev-field"><< Torna indietro</a>
-    <span id="form-error">Ops! Non hai compilato questa scheda nel modo corretto!</span>
+    <div class="content-contact">
+        <div id="wrapper-contact">
+            <div id="steps">
+                <form action="https://formspree.io/info@flussodigitale.it" id="formElem" name="formElem" method="post">
+                    <!-- STEP 1 -->
+                    <fieldset id="step-1" class="step">
+                        <hgroup>
+                            <h5>Contattarci è semplicissimo!</h5>
+                            <h6>Ci bastano pochissime informazioni per entrare in contatto con te</h6>        
+                        </hgroup>
+                            
+                        <legend>Ciao! Come ti chiami?</legend>
+                            <p>
+                                <input type="text" id="name" name="name" />
+                            </p>
+                    </fieldset>
     
-    <!-- domanda 1 -->
-    <form id="fast-form" action="https://formspree.io/info@flussodigitale.it" name="frm" method="post">
-        <fieldset id="domanda-1">
-            <label for="domanda-1">Ciao! Come ti chiami?</label>
-            <input id="domanda-1" type="text" name="nome" placeholder="Mario Rossi">
-        </fieldset>
-
-        <!-- domanda 2 -->
-        <fieldset id="domanda-2">
-            <span id="domanda-2-title">Che servizi possiamo offrirti?</span>
-
-            <input type="checkbox" name="nome" id="domanda-2-1" />
-            <label for="domanda-2-1">Sviluppo App personalizzata</label>
-
-            <input type="checkbox" id="domanda-2-2" />
-            <label for="domanda-2-2">Sito di commercio elettronico</label>
-
-            <input type="checkbox" id="domanda-2-3" />
-            <label for="domanda-2-3">Sito web generico</label>
-
-            <input type="checkbox" id="domanda-2-4" />
-            <label for="domanda-2-4">Immagine Coordinata</label>
-
-            <input type="checkbox" id="domanda-2-5" />
-            <label for="domanda-2-5">Social Media management</label>  
-
-            <input type="checkbox" id="domanda-2-6" />
-            <label for="domanda-2-6">Indicizzazione</label>
-
-            <input type="checkbox" id="domanda-2-7" />
-            <label for="domanda-2-7">Fattura PA</label>
-
-            <input type="checkbox" id="domanda-2-8" />
-            <label for="domanda-2-8">Firma digitale</label>
+                    <!-- STEP 2 -->
+                    <fieldset id="step-2" class="step">
+                        <legend>Quali sono i servizi che possiamo offrirti?</legend>
+                        <div>
+                            <p id="comunicazione-design">
+                                    <input id="app-mobile" type="checkbox" name="app-mobile" />
+                                    <label class="pointer-selector" for="app-mobile">App Mobile</label>
             
-            <input type="checkbox" id="domanda-2-9" />
-            <label for="domanda-2-9">Registrazione PEC</label>
-        </fieldset>
+                                    <input id="web-app" type="checkbox" name="web-app" />
+                                    <label class="pointer-selector" for="web-app">Web App</label>
+            
+                                    <input id="sito-web" type="checkbox" name="sito-web" />
+                                    <label class="pointer-selector" for="sito-web">Sito Web</label>
+            
+                                    <input id="e-commerce" type="checkbox" name="e-commerce" />
+                                    <label class="pointer-selector" for="e-commerce">Sito di commercio elettronico</label>
+            
+                                    <input id="social-media" type="checkbox" name="social-media" />
+                                    <label class="pointer-selector" for="social-media">Gestione dei social</label>
+            
+                                    <input id="indicizzazione-seo" type="checkbox" name="indicizzazione-seo" />
+                                    <label class="pointer-selector" for="indicizzazione-seo">Indicizzazione nei motori di ricerca</label>
+                                </p>
+            
+                                <p id="trasmissione-fatturazione">
+                                    <input id="01" type="checkbox" name="01" />
+                                    <label class="pointer-selector" for="01">Lorem</label>
+            
+                                    <input id="02" type="checkbox" name="02" />
+                                    <label class="pointer-selector" for="02">Ipsum</label>
+            
+                                    <input id="03" type="checkbox" name="03" />
+                                    <label class="pointer-selector" for="03">Dolor</label>
+            
+                                    <input id="04" type="checkbox" name="04" />
+                                    <label class="pointer-selector" for="04">Sit</label>
+            
+                                    <input id="05" type="checkbox" name="05" />
+                                    <label class="pointer-selector" for="05">Amet</label>
+                                </p>
+            
+                                <p id="gestione-conservazione">
+                                    <input id="06" type="checkbox" name="06" />
+                                    <label class="pointer-selector" for="06">Lorem</label>
+            
+                                    <input id="07" type="checkbox" name="07" />
+                                    <label class="pointer-selector" for="07">Ipsum</label>
+            
+                                    <input id="08" type="checkbox" name="08" />
+                                    <label class="pointer-selector" for="08">Dolor</label>
+                                </p>
+                            </div>
+                    </fieldset>
     
-        <!-- domanda 3 -->
-        <fieldset id="domanda-3">
-            <label for="domanda-3">Su quale mail possiamo ricontattarti?</label>                
-            <input id="domanda-3" type="email" placeholder="email@indirizzo.com">
-        </fieldset>
-        
-        <!-- domanda 4 -->
-        <fieldset id="domanda-4">
-            <label for="domanda-4">Puoi lasciarci un recapito telefonico?</label>
-            <input id="domanda-4" type="number" placeholder="338 120 6977">
-        </fieldset>
-        
-        <!-- domanda 5 -->
-        <fieldset id="domanda-5">
-            <span id="domanda-3-title">Preferisci ricevere un contatto telefonico o tramite email?</span>
-            <input type="radio" name="preferenza" id="domanda-5-telefono" value="telefono">
-            <label for="domanda-5-telefono">Telefono</label>
-            <input type="radio" name="preferenza" id="domanda-5-email" value="email">
-            <label for="domanda-5-email">E-Mail</label>
-        </fieldset>
-        
-        <!-- domanda 6 -->
-        <fieldset id="domanda-6">
-            <input id="invia" type="submit" />
-        </fieldset>
-    </form>
-  </section>
-  
+                    <!-- STEP 3 -->
+                    <fieldset id="step-3" class="step">
+                        <legend>Su quale email possiamo ricontattarti?</legend>
+                        <p>
+                            <input id="email" type="email" placeholder="indirizzo@email.com" name="email" />
+                        </p>
+                    </fieldset>
+    
+                    <!-- STEP 4 -->
+                    <fieldset id="step-4" class="step">
+                        <legend>Puoi lasciarci un recapito telefonico?</legend>
+                        <p>
+                            <input id="phone" type="number" placeholder="333 333 3333" name="phone" />
+                        </p>
+                    </fieldset>
+    
+                    <!-- STEP 5 -->
+                    <fieldset id="step-5" class="step">
+                        <legend>Preferisci ricevere un contatto telefonico o via email?</legend>
+                        <p>
+                            <input type="radio" name="preference" id="pref-phone" name="pref-phone" />
+                            <label class="pointer-selector" for="pref-phone">Telefono</label>
+    
+                            <input type="radio" name="preference" id="pref-email" name="pref-email" />
+                            <label class="pointer-selector" for="pref-email">E-Mail</label>
+                        </p>
+                    </fieldset>
+                    
+                    <!-- STEP 6 -->
+                    <fieldset id="step-6" class="step">
+                        <p>
+                            <button id="send" type="submit">Invia</button>                           
+                        </p>
+                    </fieldset>
+                </form>
+            </div> <!-- fine #steps -->
+    
+            <div id="navigation" style="display:none">
+                <ul>
+                    <li class="selected"><a href="#">Nome</a></li>
+                    <li><a href="#">Servizi</a></li>
+                    <li><a href="#">E-Mail</a></li>
+                    <li><a href="#">Telefono</a></li>
+                    <li><a href="#">Preferenze</a></li>
+                    <li><a href="#">Conferma</a></li>
+                </ul>
+            </div>
+        </div> <!-- fine #wrapper-contacts -->
+    </div> <!-- fine content -->
+</section> <!-- fine #contacts -->

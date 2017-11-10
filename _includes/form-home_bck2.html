@@ -1,0 +1,79 @@
+<!-- FORM   -->
+<section class="contact">
+    <hgroup>
+        <h5>Contattarci è semplicissimo!</h5>
+        <h6>Ci bastano pochissime informazioni per entrare in contatto con te</h6>  
+    </hgroup>  
+
+    <a class="button" href="#" id="trigger-form">Inizia ora</a>
+    <a class="button" href="#" id="next-field" class="hide">Vai avanti</a>
+    <a class="button" href="#" id="prev-field" class="hide-prev-field"><< Torna indietro</a>
+    <span id="form-error">Ops! Non hai compilato questa scheda nel modo corretto!</span>
+    
+    <!-- domanda 1 -->
+    <form id="fast-form" action="" name="frm" method="post" >
+        <fieldset id="domanda-1">
+            <label for="domanda-1">Ciao! Come ti chiami?</label>
+            <input id="domanda-1" type="text" name="nome" placeholder="Mario Rossi" required>
+        </fieldset>
+
+        <!-- domanda 2 -->
+        <fieldset id="domanda-2">
+            <span id="domanda-2-title">Che servizi possiamo offrirti?</span>
+
+            <input type="checkbox" name="nome" id="domanda-2-1" />
+            <label for="domanda-2-1">Sviluppo App personalizzata</label>
+
+            <input type="checkbox" id="domanda-2-2" />
+            <label for="domanda-2-2">Sito di commercio elettronico</label>
+
+            <input type="checkbox" id="domanda-2-3" />
+            <label for="domanda-2-3">Sito web generico</label>
+
+            <input type="checkbox" id="domanda-2-4" />
+            <label for="domanda-2-4">Immagine Coordinata</label>
+
+            <input type="checkbox" id="domanda-2-5" />
+            <label for="domanda-2-5">Social Media management</label>  
+
+            <input type="checkbox" id="domanda-2-6" />
+            <label for="domanda-2-6">Indicizzazione</label>
+
+            <input type="checkbox" id="domanda-2-7" />
+            <label for="domanda-2-7">Fattura PA</label>
+
+            <input type="checkbox" id="domanda-2-8" />
+            <label for="domanda-2-8">Firma digitale</label>
+            
+            <input type="checkbox" id="domanda-2-9" />
+            <label for="domanda-2-9">Registrazione PEC</label>
+        </fieldset>
+    
+        <!-- domanda 3 -->
+        <fieldset id="domanda-3">
+            <label for="domanda-3">Su quale mail possiamo ricontattarti?</label>                
+            <input id="domanda-3" type="email" placeholder="email@indirizzo.com" required>
+        </fieldset>
+        
+        <!-- domanda 4 -->
+        <fieldset id="domanda-4">
+            <label for="domanda-4">Puoi lasciarci un recapito telefonico?</label>
+            <input id="domanda-4" type="number" placeholder="338 120 6977" required>
+        </fieldset>
+        
+        <!-- domanda 5 -->
+        <fieldset id="domanda-5">
+            <span id="domanda-3-title">Preferisci ricevere un contatto telefonico o tramite email?</span>
+            <input type="radio" name="preferenza" id="domanda-5-telefono" value="telefono">
+            <label for="domanda-5-telefono">Telefono</label>
+            <input type="radio" name="preferenza" id="domanda-5-email" value="email">
+            <label for="domanda-5-email">E-Mail</label>
+        </fieldset>
+        
+        <!-- domanda 6 -->
+        <fieldset id="domanda-6">
+            <input id="invia" type="submit" />
+        </fieldset>
+    </form>
+  </section>
+  
