@@ -1594,6 +1594,7 @@ ul.sidebar__header a {
   max-width: 400px;
   display: block;
   margin: 0 auto;
+  margin-top: 150px;
 }
 .single-container .field img[alt^="gif:"] {
   margin-top: 5em;
