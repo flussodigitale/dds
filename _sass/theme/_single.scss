@@ -184,6 +184,11 @@ ul.sidebar__header {
             padding: 10px;
             color: #909090;
             font-weight: bold;
+            transition: $fast-transition;
+            &:hover {
+                background-color: #2e8db7;
+                color: white;
+            }
         }
 
         a.current {
@@ -208,6 +213,9 @@ ul.sidebar__header {
         
             a {
                 color: #0d2833;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         
         }
@@ -222,6 +230,7 @@ ul.sidebar__header {
         margin-top: 20px;
         color: rgb(105, 105, 105);
         letter-spacing: 1px;
+        font-family: 'Proxima Nova', Montserrat, sans-serif;
     }
 }
 

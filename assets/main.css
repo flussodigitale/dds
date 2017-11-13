@@ -1145,6 +1145,7 @@ nav.smartcrumb a:hover {
 
 .current-page a {
   color: #ef494f !important;
+  text-decoration: none !important;
 }
 
 nav.smartcrumb.scrolled {
@@ -1631,6 +1632,11 @@ ul.sidebar__header a {
   padding: 10px;
   color: #909090;
   font-weight: bold;
+  transition: 0.1s ease-in-out;
+}
+.sidebar__menu .sidebar__items a:hover {
+  background-color: #2e8db7;
+  color: white;
 }
 .sidebar__menu .sidebar__items a.current {
   background-color: #ef494f;
@@ -1652,6 +1658,9 @@ ul.sidebar__header a {
 .sidebar__menu .sidebar__panel ul li a {
   color: #0d2833;
 }
+.sidebar__menu .sidebar__panel ul li a:hover {
+  text-decoration: underline;
+}
 .sidebar__menu .sidebar__panel__helmet {
   display: block;
   text-align: left;
@@ -1661,6 +1670,7 @@ ul.sidebar__header a {
   margin-top: 20px;
   color: dimgray;
   letter-spacing: 1px;
+  font-family: 'Proxima Nova', Montserrat, sans-serif;
 }
 
 .sidebar__panel > ul:first-of-type {
@@ -2657,6 +2667,10 @@ span.error {
 
   .sidebar__header {
     display: none;
+  }
+
+  .sidebar__items:hover {
+    background-color: transparent;
   }
 
   body.single-layout {

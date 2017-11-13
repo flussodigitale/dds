@@ -32,6 +32,10 @@
         display: none; 
     }
 
+    .sidebar__items:hover {
+        background-color: transparent; 
+    }
+
         body.single-layout {
         position: relative;
         margin-left: 0px;

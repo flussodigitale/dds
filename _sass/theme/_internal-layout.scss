@@ -221,6 +221,7 @@ nav.smartcrumb {
 .current-page {
     a {
         color: $accent-color!important;
+        text-decoration: none!important;        
     } 
 }
 nav.smartcrumb.scrolled {
