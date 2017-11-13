@@ -165,21 +165,6 @@ h3.show-bg-title {
     transition: 0.4s cubic-bezier(0.76, 0.04, 0.54, 0.93);
 }
 
-/* ==> Swiper MOD <== */
-// Projects
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-  background: url('img/arrow-left.svg') no-repeat;
-}
-
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-  background: url('img/arrow-right.svg') no-repeat;
-}
-
-.swiper-pagination-bullet-active {
-  background: $accent-color;
-}
-// fine projects
-
 // Services
 .swiper-container-services {
     width: 100%;

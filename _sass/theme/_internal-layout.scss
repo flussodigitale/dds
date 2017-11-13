@@ -236,61 +236,6 @@ nav.smartcrumb.scrolled {
   .current-tab:before { color: white; }
 }
 
-// ===> CASE STUDIES <=== //
-.casestudy {
-    padding: 5em 0;
-    background-color: #f7f7f7;
-    background-image: url('../assets/img/pattern-light.svg');
-}
-
-
-.casestudy__container__items__title {
-    @include verticalCenter(center, transparent);
-    color: $accent-color;
-    text-transform: uppercase;
-    font-size: 2em;
-}
-
-.casestudy__container__items__item {
-    max-width: 645px;
-    a {
-        display: block;
-        line-height: 0;
-        opacity: 1;
-        transition: $medium-transition;
-    }
-
-    img {
-        min-width: 100%;
-    }
-
-    p {
-        position: absolute;
-        background-color: #f7f7f7;
-        padding: 15px;
-        left: 50%;
-        color: $text-darker;
-        transition: $fast-transition;
-        
-    }
-}
-
-.casestudy__container__items__item__content {
-    padding: 15px;
-    position: relative;
-    border: 2px solid rgba(11, 33, 43, 0.3);
-    margin: 25px;
-    transition: $fast-transition;
-    &:hover {
-        border-color: $accent-color;
-
-        p {
-            color: $accent-color;
-        }
-    }
-}
-
-
 // ==> PAGINA SERVIZI <== //
 section.servizi:before {
     content: '';
