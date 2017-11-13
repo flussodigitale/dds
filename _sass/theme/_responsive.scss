@@ -220,9 +220,24 @@ and (max-device-width : 1024px)  {
 
 
     // ===> PROJECTS <=== //
-    .swiper-container { height: auto; }
-    .swiper-button-next, .swiper-button-prev {
-        width: 10px;
+    .projects__thumb a {
+        float: none;
+        width: 100%;
+    }
+
+    .projects__thumb .projects__thumb__copy {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .projects h4 {
+        bottom: auto;
+        top: 0;
+        transform: translate(20px, -20px);    
+    }
+
+    .projects__thumb {
+        margin: 0 0 2px 0;
     }
 
     // ===> INFO PAGE <=== //
@@ -272,6 +287,10 @@ and (max-device-width : 1024px)  {
 
     nav.smartcrumb a {
         text-align: center;
+    }
+
+    .tab-label-container {
+        flex-direction: column;
     }
 
     //anti GSAP

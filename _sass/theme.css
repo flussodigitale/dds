@@ -2260,8 +2260,8 @@ header.nav-up {
 }
 
 .tab input[type=radio]:checked + label {
-  background-color: #ffffff;
-  color: #2e8db7;
+  background-color: #0b212b;
+  color: #fefefe;
 }
 .tab input[type=radio]:checked + label img {
   opacity: 1;
@@ -2914,12 +2914,24 @@ span.error {
     display: none !important;
   }
 
-  .swiper-container {
-    height: auto;
+  .projects__thumb a {
+    float: none;
+    width: 100%;
   }
 
-  .swiper-button-next, .swiper-button-prev {
-    width: 10px;
+  .projects__thumb .projects__thumb__copy {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .projects h4 {
+    bottom: auto;
+    top: 0;
+    transform: translate(20px, -20px);
+  }
+
+  .projects__thumb {
+    margin: 0 0 2px 0;
   }
 
   .info__container__wrapper .row .container {
@@ -2966,6 +2978,10 @@ span.error {
 
   nav.smartcrumb a {
     text-align: center;
+  }
+
+  .tab-label-container {
+    flex-direction: column;
   }
 
   #tab-content-container {
