@@ -1,6 +1,6 @@
 ---
 layout: single
-title: fatturazione elettronica verso la pubblica amministrazione.
+title: Fatturazione elettronica verso la Pubblica Amministrazione.
 meta: Meta description Easy telematico Cloud
 
 #inserisci il nome di questo file
