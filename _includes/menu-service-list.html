@@ -2,7 +2,7 @@
     {%- for servizio in site.pages -%}
         {% if servizio.type == include.type  %}
             <li class="{% if page.url contains {{servizio.mark}} %}current-page{% endif %}">
-                <a href="{{site.baseurl}}/{{servizio.url}}">{{ servizio.title }}</a>
+                <a href="{{site.baseurl}}{{servizio.url}}">{{ servizio.title }}</a>
             </li>
         {% endif %}
     {%- endfor -%}
