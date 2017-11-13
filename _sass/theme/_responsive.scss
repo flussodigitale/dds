@@ -58,6 +58,32 @@
     .top__header .top__header__container {
         margin-left: 0;
     }
+
+    /* Form */
+    #steps form #step-2 label:hover {
+        background: transparent;
+    }
+    #steps form p {
+        width: 55%;
+    }
+
+    #steps form legend {
+        width: 100vw; 
+    } 
+
+    #navigation ul li a {
+        margin: 0px 0px 4px 0px;
+    }
+
+    #steps form fieldset {
+        max-height: calc(100vh - 250px);
+        overflow-y: auto;
+    }
+
+    #navigation ul {
+        margin-left: 10px;
+        padding: 0;
+    }
 }
 
 /* ----------- iPad ----------- */

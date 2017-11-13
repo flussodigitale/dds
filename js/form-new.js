@@ -1,7 +1,12 @@
 $(function() {
+	var width = $(window).innerWidth();
+
+	if(width <= 414) {
+		$('#steps .step').css('width', width + 'px');
+	}
+
     /* Numero di campi */
     var fieldsetCount = $('#formElem').children().length;
-    console.log(fieldsetCount);
 
     /* Posizione corrente */
 	var current = 1;
