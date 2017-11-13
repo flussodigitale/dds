@@ -1056,8 +1056,8 @@ section.content h2 {
   color: white;
   background-color: #ef494f;
   font-size: 1.5em;
-  height: 80px;
   box-shadow: inset 0px 0px 0px 5px #ce474c;
+  padding: 10px 5px;
   transition: 0.3s ease-in-out;
 }
 .offerta .offerta__container__items__item__title a {
