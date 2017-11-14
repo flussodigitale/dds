@@ -377,10 +377,10 @@ and (max-device-width : 1024px)  {
         opacity: 0.8;
     }
 
-    body.single-layout .container h1 { font-size: 4em; }
+    body.single-layout .container h1 { font-size: 2em; }
     body.single-layout .container h5 { display: none;  }
 
-    .slogan h4 { font-size: 2em; }
+    .slogan h4 { font-size: 1.5em; }
     .container.single-container .field:nth-child(2n+1) .row { flex-direction: column-reverse; }
 
     .container.single-container .field img {

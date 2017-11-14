@@ -3048,7 +3048,7 @@ span.error {
   }
 
   body.single-layout .container h1 {
-    font-size: 4em;
+    font-size: 2em;
   }
 
   body.single-layout .container h5 {
@@ -3056,7 +3056,7 @@ span.error {
   }
 
   .slogan h4 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .container.single-container .field:nth-child(2n+1) .row {
