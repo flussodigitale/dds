@@ -1668,6 +1668,9 @@ ul.sidebar__header a {
 .sidebar__menu .sidebar__panel ul li a:hover {
   text-decoration: underline;
 }
+.sidebar__menu .sidebar__panel > ul:last-of-type > li {
+  border-bottom: 1px solid lightgray;
+}
 .sidebar__menu .sidebar__panel__helmet {
   display: block;
   text-align: left;

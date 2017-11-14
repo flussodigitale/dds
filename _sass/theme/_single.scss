@@ -229,6 +229,10 @@ ul.sidebar__header {
         }
     }
 
+    .sidebar__panel>ul:last-of-type > li{
+        border-bottom: 1px solid lightgray;
+    }
+
     .sidebar__panel__helmet {
         display: block;
         text-align: left;
