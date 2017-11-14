@@ -124,7 +124,7 @@ ul.sidebar__header {
         font-weight: bold;
         text-transform: uppercase;
         color: white;
-        text-shadow: 1px 1px 3px rgba(69, 88, 105, 0.6);
+        text-shadow: 1px 1px 3px rgba(69, 88, 105, 0.9);
     }
 
     h3:after {
@@ -155,6 +155,13 @@ ul.sidebar__header {
             &:hover {
                 text-decoration: underline;
             } 
+        }
+
+        .didascalia-video {
+            font-family: 'Proxima Nova', Montserrat, sans-serif;
+            color: #2e8db7;
+            text-transform: lowercase;
+            font-variant: small-caps;
         }
     }
 }
