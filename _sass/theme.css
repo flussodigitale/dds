@@ -2830,6 +2830,10 @@ span.error {
     top: 5em;
     max-width: 365px;
     left: 0;
+    opacity: 1;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    color: white;
   }
 
   .top-single > .container hgroup {
@@ -3044,9 +3048,10 @@ span.error {
     max-width: 250px;
     top: 0;
     left: 0;
-    opacity: 0.8;
+    opacity: 1;
     text-transform: lowercase;
     font-variant: small-caps;
+    color: white;
   }
 
   body.single-layout .container h1 {

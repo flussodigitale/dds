@@ -11,8 +11,8 @@ description: Un servizio di archiviazione digitale certificato e accreditato che
 #il type indica la categoria
 type: conservazione
 
-image: /
-altImg: /
+#image: /
+#altImg: /
 ---
 <div class="slogan">
     <h4>Elimina per sempre la carta con estrema tranquillità. Richiedi un appuntamento per una dimostrazione anche online</h4>

@@ -11,8 +11,8 @@ description: Il paradosso dei nostri tempi è che mentre tutto volge al digitale
 #il type indica la categoria
 type: conservazione
 
-image: /
-altImg: /
+#image: /
+#altImg: /
 ---
 La gestione informatica degli archivi è stata da sempre un bisogno primario di qualsiasi impresa e soprattutto degli enti pubblici. Eppure non si hanno molte testimonianze storiche di archivi digitali.
 
