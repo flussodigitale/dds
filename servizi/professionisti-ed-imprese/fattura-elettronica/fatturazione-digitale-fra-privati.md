@@ -9,7 +9,7 @@ mark: fatturazione-digitale-fra-privati
 description: Generazione o importazione e trasmissione delle fatture verso la pubblica amministrazione, gestione delle notifiche, firma digitale e conservazione sostitutiva automatica.
 type: fatturazione
 image: 
-altImg: 
+altImg: La tua Fattura digitale b2b
 ---
 <div class="slogan">
     <h4>L'opportunità di emettere e ricevere fatture elettroniche da e verso tutte le controparti commerciali, sia private che pubbliche</h4>

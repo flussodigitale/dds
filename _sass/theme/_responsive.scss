@@ -372,9 +372,11 @@ and (max-device-width : 1024px)  {
     .top-single > .container hgroup { margin-top: 0; }
     .top-single > .container img {
         max-width: 250px;
-        top: 5em;
+        top: 0;
         left: 0;
         opacity: 0.8;
+        text-transform: lowercase;
+        font-variant: small-caps;
     }
 
     body.single-layout .container h1 { font-size: 2em; }

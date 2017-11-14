@@ -3042,9 +3042,11 @@ span.error {
 
   .top-single > .container img {
     max-width: 250px;
-    top: 5em;
+    top: 0;
     left: 0;
     opacity: 0.8;
+    text-transform: lowercase;
+    font-variant: small-caps;
   }
 
   body.single-layout .container h1 {
