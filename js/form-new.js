@@ -1,6 +1,10 @@
 $(function() {
 	var width = $(window).innerWidth();
 
+	if(width <= 1024) {
+		$('#steps .step').css('width', 400 + 'px');
+	}
+
 	if(width <= 414) {
 		$('#steps .step').css('width', width + 'px');
 	}

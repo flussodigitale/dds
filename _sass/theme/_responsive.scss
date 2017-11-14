@@ -115,6 +115,27 @@ and (max-device-width : 1024px)  {
         img { display: none; }
     }
 
+    // ===> PROJECTS <=== //
+    .projects__thumb a {
+        float: none;
+        width: 100%;
+    }
+
+    .projects__thumb .projects__thumb__copy {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .projects h4 {
+        bottom: auto;
+        top: 0;
+        transform: translate(20px, -20px);    
+    }
+
+    .projects__thumb {
+        margin: 0 0 2px 0;
+    }
+
     /* PAGE */
     .top.top-page {
         height: 45vh !important;
