@@ -2062,6 +2062,7 @@ ul.nav-header li:last-child label {
   color: #0b212b;
   padding: 4px;
   display: block;
+  font-family: 'Proxima Nova', Montserrat, sans-serif;
   transition: 0.1s ease-in-out;
 }
 .nav-panel a:hover {

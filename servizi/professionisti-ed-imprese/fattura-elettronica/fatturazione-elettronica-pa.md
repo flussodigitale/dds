@@ -6,7 +6,7 @@ meta: Meta description Easy telematico Cloud
 #inserisci il nome di questo file
 mark: fatturazione-elettronica-pa
 
-description: Un servizio in cloud che ti permette di inviare e ricevere la fattura elettronica nel formato previsto, generare e protocollare i relativi esiti e conservare digitalmente a norma di legge sia la fattura che gli esiti. E' un modulo di un sistema di gestione dei archivi più performante per consentirti un domani di ampliare la conservazione digitale a tutti i tuoi documenti
+description: Un servizio in cloud che ti permette di inviare e ricevere la fattura elettronica nel formato previsto, generare e protocollare i relativi esiti e conservare digitalmente a norma di legge sia la fattura che gli esiti.
 
 type: fatturazione
 image: 

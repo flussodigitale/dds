@@ -202,6 +202,7 @@ ul.nav-header {
         color: $text-darker;
         padding: 4px;
         display: block;
+        font-family: 'Proxima Nova', Montserrat, sans-serif;
         transition: $fast-transition; 
         &:hover {
             color: $accent-color;
