@@ -5,7 +5,7 @@ date:   2017-11-03 19:00:00 +0200
 author: Digital Documents Solution
 category: news
 tags: [digitalizzazione, micro impresa, media impresa, piccola impresa]
-permalink: /news/bando-voucher-digitalizzazione-pmi
+permalink: news/bando-voucher-digitalizzazione-pmi/
 
 meta: Il Ministro dello Sviluppo Economico e il Ministro dell’Economia e delle Finanze hanno firmato il Decreto attuativo per l’erogazione di Voucher del valore massimo di 10.000 euro a favore della digitalizzazione delle PMI, preannunciato l’anno scorso. 
 image: assets/img/news/bando-voucher-digitalizzazione-pmi.jpg

@@ -5,7 +5,7 @@ date:   2017-11-07 16:45:00 +0200
 author: Digital Documents Solution
 category: [news, fatturazione]
 tags: [fattura elettronica, privati]
-permalink: /news/invia-ricevi-fatture-elettroniche-tra-privati/
+permalink: news/invia-ricevi-fatture-elettroniche-tra-privati/
 
 meta: Un servizio che automatizza la generazione, la trasmissione, il monitoraggio e la gestione del processo di fatturazione elettronica tra privati (Aziende e soggetti con P.IVA).
 
