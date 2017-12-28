@@ -1872,7 +1872,7 @@ body.hide-sidebar .sidebar__menu {
 
 /* Sidebar */
 .top {
-  height: 100vh;
+  height: 65vh;
   background: #123747;
   /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover, #123747 0%, #0b212b 100%);
@@ -1890,7 +1890,7 @@ body.hide-sidebar .sidebar__menu {
 }
 
 .big-logo {
-  width: 700px;
+  width: 500px;
 }
 .big-logo svg {
   width: 100%;
