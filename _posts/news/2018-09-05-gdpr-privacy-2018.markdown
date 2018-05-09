@@ -27,8 +27,13 @@ Ricordiamo che dal 2003 ci occupiamo di Privacy e relativa sicurezza informatica
 Oggi affrontiamo le novità del GDPR con la consapevolezza di quanto già realizzato potendo veramente rinnovare il vecchio slogan “La Privacy… senza preoccupazioni.”
 </p>
 
+<p>
 <a class="button" href="http://www.webmicrotech.it/web/images/offerta-scuole.pdf">Offerta per le scuole (anche in rete)</a>
-<a class:"button" href="http://www.webmicrotech.it/web/images/offerta-aziende.pdf">Offerta per aziende e professionisti</a>
+</p>
+
+<p>
+<a class="button" href="http://www.webmicrotech.it/web/images/offerta-aziende.pdf">Offerta per aziende e professionisti</a>
+</p>
 
 
 
