@@ -28,11 +28,11 @@ Oggi affrontiamo le novità del GDPR con la consapevolezza di quanto già realiz
 </p>
 
 <p>
-<a class="button" href="http://www.webmicrotech.it/web/images/offerta-scuole.pdf">Offerta per le scuole (anche in rete)</a>
+<a style="display: inline-block;" class="button" href="http://www.webmicrotech.it/web/images/offerta-scuole.pdf">Offerta per le scuole (anche in rete)</a>
 </p>
 
 <p>
-<a class="button" href="http://www.webmicrotech.it/web/images/offerta-aziende.pdf">Offerta per aziende e professionisti</a>
+<a style="display: inline-block;" class="button" href="http://www.webmicrotech.it/web/images/offerta-aziende.pdf">Offerta per aziende e professionisti</a>
 </p>
 
 
