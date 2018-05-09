@@ -1,0 +1,31 @@
+---
+layout: post
+title:  Offerta Privacy GDPR
+date:   2018-05-09 11:00:00 +0200
+author: Digital Documents Solution
+category: news
+tags: [privacy, gdpr]
+permalink: news/offerta-privacy-gdpr/
+
+meta: Nella continuazione dell’attività di supporto alle scuole, alle aziende, ai professionisti, abbiamo il piacere di sottoporvi le nostre nuove offerte per servizi di consulenza legati al mondo dell’Information Tecnology.
+image: assets/img/news/banner-gdpr-privacy-2018.jpg
+altImg: Banner Offerta Privacy 2018
+---
+<h2>La Privacy... senza preoccupazioni!</h2>
+
+<p>
+Nella continuazione dell’attività di supporto alle scuole, alle aziende, ai professionisti, abbiamo il piacere di sottoporvi le nostre nuove offerte per servizi di consulenza legati al mondo dell’Information Tecnology.
+</p>
+
+<p>
+Servizio di supporto alle aziende per l’adeguamento al GDPR.
+</p>
+
+<p>
+Dopo la maturata esperienza sul D.Lgs. 196/2003, in partnership con il Dr. Valentino Valente, per il supporto nell’adozione della normativa privacy, si rinnova la collaborazione sinergica tra Microtech e Digital Document Solution per l’adozione del GDPR, la redazione del DPIA, e le attività del DPO.
+Ricordiamo che dal 2003 ci occupiamo di Privacy e relativa sicurezza informatica. 
+Oggi affrontiamo le novità del GDPR con la consapevolezza di quanto già realizzato potendo veramente rinnovare il vecchio slogan “La Privacy… senza preoccupazioni.”
+</p>
+
+
+
